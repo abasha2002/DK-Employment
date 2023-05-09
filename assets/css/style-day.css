@@ -1,0 +1,588 @@
+@font-face {
+    font-family: 'HR';
+    src: url(../fonts/HelveticaNeue-LT-55-Roman-Regular.ttf);
+}
+@font-face {
+    font-family: 'HB';
+    src: url(../fonts/HelveticaNeue-LT-55-Roman-Bold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.light{
+    background: #F2F5FF !important;
+    background-image: url(../images/signin-background.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.light #company-logo{
+    filter: invert(100%);
+}
+.light #toggle-btn{
+    background-color: #4F52B4 !important;
+    background-image: url(../images/night-mode-switch.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    transition:  .5s ease-in-out;
+}
+
+.light  h1{
+    color: #4F52B4;
+}
+.light .signin  p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.light .signin-container{
+    background: #FFFFFF;
+
+}
+.light .social-media div{
+    background: rgba(239, 242, 252, 0.02);
+}
+.light .social-media span{
+    color: #000000;
+}
+
+.light .lines span{
+    color: rgba(0, 0, 0, 0.4);
+}
+.light .lines div{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.light .inputs label{
+    color: #000000;
+}
+.light .input{
+    background-color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000000;
+}
+.light .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.light .checkbox-input input:checked ~ .checkmark {
+    background-color: inherit;
+    border: 2px solid #000000;
+}
+.light .checkbox-input:has(input:checked){
+    color: #000000;
+}
+.light .container input:checked ~ .checkmark:after {
+    display: block;
+    filter: invert(100%);
+}
+.light .container .checkmark:after {
+    
+    background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(0%);
+}
+
+.light .checkmark {
+    border: 2px solid #000000;
+    background-color: inherit;
+}
+.light .checkbox label{
+    color: #000000;
+}
+.light .checkbox a{
+    color: rgba(0, 0, 0, 0.2);
+}
+.light .checkbox a:hover{
+    color: rgba(0, 0, 0, 0.2);
+}
+.light .submit-button{
+    background: #4F52B4;
+    color: #FFFFFF;
+}
+.light .registration a{
+    color: #4F52B4;
+}
+.light .registration a:hover{
+    color: #4F52B4;
+}
+
+.light #showHideButton{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: inherit;
+    border: none;
+    outline: 0;
+}
+.light #showPasswordIcon{
+    filter: invert(100%);
+}
+.light #hidePasswordIcon{
+    filter: invert(50%) !important;
+}
+.light .spotlight{
+    display: none;
+}
+.light .signup-container{
+    background: #FFFFFF;
+}
+.light .signup-switch-mode{
+    display: none;
+}
+
+.light .already-registered span{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .already-registered a{
+    color: #4F52B4;
+}
+.light .already-registered a:hover{
+    color: #4F52B4;
+}
+
+.light .lost-password-container{
+    background: #FFFFFF;
+}
+.light h4{
+    color: #000000;
+}
+.lost-password-container button{
+    background: #4F52B4;
+    color: #FFFFFF;
+}
+.light .lost-password-section ::placeholder{
+    color: rgba(239, 242, 252, 0.2);
+}
+
+.light .recover-password-container{
+    background: #FFFFFF;
+}
+.light #showHideButton1{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 30px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: inherit;
+    border: none;
+    outline: 0;
+}
+.light #showPasswordIcon1{
+    filter: invert(100%);
+}
+.light #hidePasswordIcon1{
+    filter: invert(50%) !important;
+}
+
+.light .index-header{
+    background: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)!important;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.05));
+}
+.light .index-header p{
+    color: #000000;
+}
+.light .index-header .dropdown-menu{
+    background-color: #FFFFFF;
+    border: 1px solid lightgrey;
+}
+.light .index-header a{
+    color: #000000 !important;
+}
+.light .index-header a:hover{
+    background-color: inherit;
+}
+.light .dropdown-arrow{
+    filter: invert(100%);
+}
+.light .burger-menu-icon{
+    filter: invert(100%) !important;
+}
+.light .modal-content{
+    background-color: #FFFFFF;
+}
+.light .modal-footer a{
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+.light #exampleModal a{
+    color: #000000;
+}
+.light .exit{
+    filter: invert(100%);
+}
+.light .dropdown-triangle{
+    filter: brightness(0%) invert(100%);
+}
+.light.index{
+    background-image: none !important;
+    background: #F2F5FF !important;
+}
+.light .section1 h1{
+    color: #000000;
+}
+.light .section1 h2{
+    color: #000000;
+}
+.light .section1 .service h3{
+    color: #000000;
+}
+.light .section1 .service span{
+    color: #4F52B4;
+}
+.light .section1 p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .section1 .service{
+    background-color: #FFFFFF;
+}
+.light .section1 #money-show-hide-desktop{
+    filter: invert(100%);
+}
+.light .section1 #dotsDesktop{
+    filter: invert(100%);
+}
+.light .section1 .mobile-service-header{
+    color: #000000;
+}
+.light #exampleModal1 input{
+    border: 1px solid lightgrey;
+    color: #000000
+}
+.light #exampleModal1 .modal-header-exit h3{
+    color: #000000;
+}
+.light #exampleModal1 select{
+    border: 1px solid lightgrey;
+    color: #000000;
+}
+.light #exampleModal1 .select img{
+    filter: invert(100%);
+}
+.light #exampleModal1 select option{
+    background-color: inherit;
+}
+.light #exampleModal1 textarea{
+    border: 1px solid lightgrey;
+    color: #000000;
+}
+.light #exampleModal1 ::placeholder{
+    color: #000000;
+}
+.light #exampleModal1 .afterLoad h4{
+    color: #000000;
+}
+.light #exampleModal1 .afterLoad a{
+    color: #000000;
+}
+.light #exampleModal1 .close{
+    filter: invert(100%);
+}
+.light .section2{
+    background: #FFFFFF;
+}
+.light .section2 .section2-header h2{
+    color: #000000;
+}
+.light .section2 .section2-header img{
+    filter: invert(100%);
+}
+.light .section2 .section2-tables ul{
+    background: #4F52B4;
+}
+.ligth .section2 .section2-spotlight{
+    background: rgba(79, 82, 180, 0.3);
+    filter: blur(66.5px);
+}
+.light .section2 .section2-tables table thead{
+    background: #F2F5FF;
+}
+.light .section2 .section2-tables table th{
+    color: #000000;
+}
+.light .section2 .section2-tables table tbody{
+    background: #FFFFFF;
+}
+.light .section2 .section2-tables table td{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.light #filterModal input{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.light #filterModal select{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+.light #filterModal .modal-header h3{
+    color: #000000;
+}
+.light #filterModal .filter-modal-header .close{
+    filter: invert(100%);
+}
+.light #filterModal .select img{
+    filter: invert(100%);
+}
+.light .section3{
+    background: #FFFFFF;
+}
+.light .section3 .percent{
+    background: #FFFFFF;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #4F52B4;
+}
+.light .section3 h2{
+    color: #000000;
+}
+.light .section3 .sec3-select img{
+    filter: invert(100%);
+}
+.light .section3 .sec3-select select{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .section3 .sec3-select option{
+    background-color: #FFFFFF;
+}
+.light .section3 p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .section3 .exchange span{
+    color: #000000;
+}
+.light .section3 .exchange input{
+    color: #000000;
+    border-bottom: 1px solid black;
+}
+.light .section3 .exchange-icon img{
+    filter: invert(100%);
+}
+.light #day-pie-chart{
+    display: inline;
+}
+.light #day-chart{
+    display: inline-block;
+}
+.light #night-pie-chart{
+    display: none;
+}
+.light #night-chart{
+    display: none;
+}
+.light .section4{
+    background: #FFFFFF;
+}
+.light .section4 .sec4-header h2{
+    color: #000000;
+}
+.light .section4 .sec4-header img{
+    filter: invert(100%);
+}
+.light .section4 .second-charts .chart-info h5{
+    color: #000000;
+}
+.light .section4 .second-charts .purple-dot{
+    background: #DF12A6;
+}
+.light .section4 .second-charts .cyan-dot{
+    background: #08FFFF;
+}
+.light .section4 .second-charts .total span{
+    color: #000000;
+}
+.light footer .mobile-footer{
+    background: #FFFFFF;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.light footer .mobile-footer img{
+    filter: invert(100%);
+}
+.light footer .footer-links a{
+    color: #000000;
+}
+.light footer img{
+    filter: invert(100%);
+}
+.light .section4 .chart-numbers .chart-dot9{
+    width: 10px;
+    height: 10px;
+    background: #22C55E;
+    border-radius: 5px;
+}
+.light .section4 .chart-numbers h6{
+    color: #000000;
+}
+.light .section4 .chart-numbers p{
+    color: #000000;
+}
+.light .chart-numbers-mobile{
+    background: #FFFFFF;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 0px 0px;
+}
+.light .chart-numbers-mobile div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.light .chart-numbers-mobile h6{
+    color: #000000;
+}
+.light .chart-numbers-mobile p{
+    color: #000000;
+}
+.light #toggle-btn-parameters{
+    background-color: #4F52B4 !important;
+    background-image: url(../images/night-mode-switch.svg);
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    transition:  .5s ease-in-out;
+}
+.light .parameters-section1 h1{
+    color: #000000;
+}
+.light .parameters-section1 .parameters-switcher p{
+    color: #000000;
+}
+.light .parameters-inputs label{
+    color: #000000;
+}
+.light .parameters-inputs input{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: inherit;
+    color: #000000;
+}
+.light .parameters-mobile h2{
+    color: #000000;
+}
+.light .index-header .return img{
+    filter: invert(100%);
+}
+.light.parameters{
+    background-color: #FFFFFF !important;
+}
+.light .parameters-section1 .day-mode{
+    display: inline !important;
+}
+.light .parameters-section1 .dark-mode{
+    display: none !important;
+}
+.light .parameters-inputs .edit {
+    filter: invert(100%);
+}
+
+@media screen and (max-width: 768px) {
+    .light{
+        background-color: #FFFFFF !important;
+        background-image: none !important;
+    }
+    .light header{
+        position: relative;
+        z-index: 2;
+    }
+    .light .mobile-container{
+        background: #FFFFFF;
+    }
+    .light h1{
+        color: #000000 !important;
+    }
+    .light .spotlight{
+        display: none !important;
+    }
+    .light .background-mobile{
+        position: absolute;
+        height: 209px;
+        width: 100%;
+        background-image: url(../images/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        z-index: 1;
+    }
+    .light .money-amount h2{
+        color: #000000 !important;
+    }
+    .light #money-show-hide{
+        filter: invert(100%) !important;
+    }
+    .light .modal-header{
+        background: #FFFFFF !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    }
+    .light .modal-header img{
+        filter: invert(100%) !important;
+    }
+    .light .modal-body{
+        background: #F2F5FF !important;
+    }
+    .light .modal-footer{
+        background: #F2F5FF !important;
+    }
+    .light .modal-mobile-links hr{
+        border: 1px solid rgba(0, 0, 0, 0.05) !important;
+        opacity: .05;
+    }
+    .light .section1 .service{
+        background-color: #4F52B4;
+    }
+    .light .section1 .service h3{
+        color: #FFFFFF;
+    }
+    .light .section1 .service span{
+        color: #F2F5FF;
+    }
+    .light .section1 .service a{
+        text-decoration: none;
+    }
+    .light .section1 .service button{
+        background-color: #FFFFFF;
+        color: #4F52B4;
+        display: flex;
+        justify-content: space-between;
+    }
+    .light .section1 .service button img{
+        filter: invert(100%);
+    }
+    .light .index-header #dots{
+        filter: invert(100%);
+    }
+    .light .section1 .section1-texts{
+        background-color: #FFFFFF !important;
+    }
+    .light .section2 .section2-tables ul .span-div{
+        background: #F2F5FF;
+        justify-content: center;
+    }
+    .light .section2 .section2-tables ul{
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    .light .section2 .section2-tables ul li span{
+        color: #4F52B4;
+    }
+    .light .section2 .section2-tables ul li p{
+        color: #000000;
+    }
+    .light .day-mobile-chart{
+        display: block;
+    }
+    .light .night-mobile-chart{
+        display: none;
+    }
+    .light .night-chart-info{
+        display: none;
+    }
+    .light .day-chart-info{
+        display: block;
+    }
+}

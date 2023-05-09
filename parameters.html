@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment company</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-day.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body class="index parameters">
+    <header class="index-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 d-flex align-items-md-center align-items-start page-header">
+                    <div class="header-company-logo">
+                        <a href="index.html">
+                            <img id="company-logo" src="./assets/images/company-logo.svg" alt="company logo">
+                        </a>
+                    </div>
+                    <div class="index-header-menu d-flex align-items-center">
+                        <div id="drpbtn" class="btn-group position-relative">
+                            <button id="dropDownButton" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>მყიდველის გაგზავნა <span><img class="dropdown-arrow" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow"></span></p>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ახალი მომხმარებლის გაგზავნა</a></li>
+                                <li><a class="dropdown-item" href="#">გაგზავნილი მომხმარებლები</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="btn-group position-relative">
+                            <button id="dropDownButton" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>კატეგორიები <span><img id="sss" class="dropdown-arrow" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow"></span></p>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">განსახილველი მომხმარებლები</a></li>
+                                <li><a class="dropdown-item" href="#">მოლაპარაკების პროცესში</a></li>
+                                <li><a class="dropdown-item" href="#">უკვე რეგისტრირებული</a></li>
+                                <li><a class="dropdown-item" href="#">დაუარებული მომხმარებლები</a></li>
+                                <li><a class="dropdown-item" href="#">არ იყიდა</a></li>
+                                <li><a class="dropdown-item" href="#">მოეწონა</a></li>
+                                <li><a class="dropdown-item" href="#">ჯავშანი</a></li>
+                                <li><a class="dropdown-item" href="#">გაყიდული</a></li>
+                                <li><a class="dropdown-item" href="#">გაყიდული / ჩარიცხული</a></li>
+                            </ul>
+                        </div>
+    
+                        <div>
+                            <a class="statistics">სტატისტიკა</a>
+                        </div>
+                    </div>
+                    <div class="money-amount">
+                        <h2>გამომუშავებული თანხა</h2>
+                        <div class="d-flex align-items-center">
+                            <span id="amount">10 000 ლ</span>
+                            <img style="display: none;" id="dots" src="./assets/images/circles.svg" alt="little circles">
+                            <img style="opacity: .2;" id="money-show-hide" src="./assets/images/show-password.svg" alt="icon for hide text">
+                        </div>
+                    </div>
+                    <div class="burger-menu">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img class="burger-menu-icon" src="./assets/images/burger-menu.svg" alt="burger menu">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="parameters-mobile position-relative d-flex align-items-center justify-content-center">
+                    <a class="return" href="index.html">
+                        <img src="./assets/images/go-back-arrow.svg" alt="go back">
+                    </a>
+                    <h2>პარამეტრები</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog burger-menu-modal-dialog">
+          <div class="modal-content burger-menu-modal-content">
+            <div class="modal-header burger-menu-modal-header p-0">
+                <div class="modal-header-exit text-end">
+                    <img data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
+                </div>
+            </div>
+            <div class="modal-body p-0">
+              <div class="modal-links">
+                <a href="#">დეველოპერები</a>
+                <a href="#">ტრენინგები</a>
+                <a href="parameters.html">პარამეტრები</a>
+              </div>
+              <div class="modal-mobile-links">
+                <a href="#">გაგზავნილი მომხმარებლები</a>
+                <hr>
+                <a href="#">დეველოპერები</a>
+                <hr>
+                <a href="#">ტრენინგები</a>
+                <hr>
+                <a href="parameters.html">პარამეტრები</a>
+                <hr>
+            </div>
+            </div>
+            <div class="modal-footer burger-menu-modal-footer p-0">
+                <div class="modal-exit">
+                    <a href="signin.html">გასვლა <img class="exit" style="margin-left: 16px;" src="./assets/images/exit.svg" alt="exit icon"></a>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <section class="parameters-section1 container">
+        <div class="parameters-container">
+            <div class="parameters-header">
+                <h1>პარამეტრები</h1>
+            </div>
+            <div class="parameters-inputs">
+                <div>
+                    <label for="id">პირადი ნომერი</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label style="margin-bottom: 10px;" for="full name">სახელი და გვარი</label>
+                    <div class="position-relative">
+                        <input type="text">
+                        <img class="edit" src="./assets/images/edit.svg" alt="icon for editing">
+                    </div>
+                </div>
+                <div>
+                    <label style="margin-bottom: 10px;" for="phone number">ტელეფონი</label>
+                    <div class="position-relative">
+                        <input type="text">
+                        <img class="edit" src="./assets/images/edit.svg" alt="icon for editing">
+                    </div>
+                </div>
+                <div style="margin-bottom: 36px;">
+                    <label for="email">ელ. ფოსტა</label>
+                    <input type="email">
+                </div>
+            </div>
+            <hr class="parameters-line">
+            <div style="height: 24px;" class="parameters-switcher d-flex justify-content-between">
+                <p class="dark-mode">Dark mode</p>
+                <p class="day-mode">Light mode</p>
+                <div>
+                    <div class="form-check form-switch">
+                        <input id="parameters-switcher" class="form-check-input" type="checkbox" role="switch">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
