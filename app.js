@@ -227,3 +227,15 @@ listItems.forEach((li) => {
     li.classList.add('active');
   });
 });
+
+
+function sending(){
+    document.getElementById("after-sending").style.setProperty('display', 'flex', 'important');
+    document.getElementById("after-sending").style.alignItems = "center";
+    document.getElementById("after-sending").style.justifyContent = "center";
+    document.getElementById("progress-container1").style.display = "block";
+}
+document.getElementById("progress-container1").addEventListener("animationed", function(){
+  document.getElementById("progress-container1").style.setProperty('display', 'none', 'important');
+  document.getElementById("successful").style.setProperty('display', 'block', 'important');
+});

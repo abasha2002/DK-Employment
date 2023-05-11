@@ -10,11 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
-<body class="index parameters">
+<body class="index user">
     <header class="index-header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 d-flex align-items-md-center align-items-start page-header">
+                <div class="col-12 d-flex align-items-md-center align-items-start">
                     <div class="header-company-logo">
                         <a href="index.html">
                             <img id="company-logo" src="./assets/images/company-logo.svg" alt="company logo">
@@ -66,13 +66,6 @@
                         </button>
                     </div>
                 </div>
-
-                <div class="parameters-mobile position-relative d-flex align-items-center justify-content-center">
-                    <a class="return" href="index.html">
-                        <img src="./assets/images/go-back-arrow.svg" alt="go back">
-                    </a>
-                    <h2>პარამეტრები</h2>
-                </div>
             </div>
         </div>
     </header>
@@ -109,47 +102,69 @@
           </div>
         </div>
     </div>
-    <section class="parameters-section1 container">
-        <div class="parameters-container">
-            <div class="parameters-header">
-                <h1>პარამეტრები</h1>
+
+    <section class="user-container position-relative">
+        <div class="container d-flex">
+            <div>
+                <h1>მყიდველის გაგზავნა</h1>
+                <p>მყიდველის გაგზავნა ასეთი მარტივი არასდროს ყოფილა. გამოგვიგზავნე მყიდველის მონაცემები და მიიღე საკომისიო.</p>
+                <form action="" class="user-form">
+                    <input type="text" placeholder="სახელი, გვარი">
+                    <input type="text" placeholder="მობილური">
+                    <div class="position-relative user-select">
+                        <img  src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                        <select name="დეველოპერი კომპანია" id="development company">
+                            <option value="დეველოპერი კომპანია" selected disabled>აირჩიე დეველოპერი კომპანია</option>
+                            <option value="დეველოპერი კომპანია 1">დეველოპერი კომპანია 1</option>
+                            <option value="დეველოპერი კომპანია 2">დეველოპერი კომპანია 2</option>
+                            <option value="დეველოპერი კომპანია 3">დეველოპერი კომპანია 3</option>
+                            <option value="დეველოპერი კომპანია 4">დეველოპერი კომპანია 4</option>
+                            <option value="დეველოპერი კომპანია 5">დეველოპერი კომპანია 5</option>
+                        </select>
+                    </div>
+                    <div class="position-relative user-select">
+                        <img src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                        <select name="სერვისი" id="select-service">
+                            <option value="სერვისი" selected disabled>აირჩიე სერვისი</option>
+                            <option value="სერვისი1">სერვისი 1</option>
+                            <option value="სერვისი2">სერვისი 2</option>
+                            <option value="სერვისი3">სერვისი 3</option>
+                        </select>
+                    </div>
+                    <textarea name="კომენტარი" id="textareaForComment" placeholder="დაწერეთ კომენტარი"></textarea>
+                </form>
+                <div class="sending-user-animation">
+                    <button id="sendButton1" onclick="sending()">გაგზავნე მომხმარებელი<img class="user-icon" style="margin-left: 11px;" src="./assets/images/user.svg" alt="user icon"></button>
+                </div>
             </div>
-            <div class="parameters-inputs">
-                <div>
-                    <label for="id">პირადი ნომერი</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label style="margin-bottom: 10px;" for="full name">სახელი და გვარი</label>
-                    <div class="position-relative">
-                        <input type="text">
-                        <img class="edit" src="./assets/images/edit.svg" alt="icon for editing">
-                    </div>
-                </div>
-                <div>
-                    <label style="margin-bottom: 10px;" for="phone number">ტელეფონი</label>
-                    <div class="position-relative">
-                        <input type="text">
-                        <img class="edit" src="./assets/images/edit.svg" alt="icon for editing">
-                    </div>
-                </div>
-                <div style="margin-bottom: 36px;">
-                    <label for="email">ელ. ფოსტა</label>
-                    <input type="email">
-                </div>
-            </div>
-            <hr class="parameters-line">
-            <div style="height: 24px;" class="parameters-switcher d-flex justify-content-between">
-                <p class="dark-mode">Dark mode</p>
-                <p class="day-mode">Light mode</p>
-                <div>
-                    <div class="form-check form-switch">
-                        <input id="parameters-switcher" class="form-check-input" type="checkbox" role="switch">
-                    </div>
-                </div>
+            <div class="user-sending-image" style="margin-left: auto;">
+                <img src="./assets/images/send-user.png" alt="sending user icon">
             </div>
         </div>
+        <div class="after-sending position-absolute" style="z-index: 5;" id="after-sending">
+            <div id="progress-container1">
+                <div class="line-box">
+                    <div class="line" id="line"></div>
+                </div>
+            </div>
+            <div class="afterLoad success" id="successful">
+                <div class="position-absolute closing-x">
+                    <img class="close" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
+                </div>
+                <img src="./assets/images/success.svg" alt="successfuly send">
+                <h4>მომხმარებელი წარმატებით გაიგზავნა</h4>
+
+                <a href="#">ნახეთ გაგზავნილი მომხმარებლები</a>
+            </div>
+            <div class="afterLoad fail">
+                <img src="./assets/images/fail.svg" alt="sending request failed">
+                <h4>მომხმარებელი ვერ გაიგზავნა</h4>
+
+                <a href="#">სცადეთ თავიდან</a>
+            </div> 
+        </div>
     </section>
+
 
     <script src="app.js"></script>
 </body>

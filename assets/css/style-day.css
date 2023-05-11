@@ -480,6 +480,35 @@
 .light .parameters-inputs .edit {
     filter: invert(100%);
 }
+.light .user-container h1{
+    color: #000000;
+}
+.light .user-container p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .user-container{
+    background: #FFFFFF;
+}
+.light .user-container input{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: #000000;
+}
+.light .user-container select{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: #000000;
+}
+.light .user-container textarea{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: #000000;
+}
+.light .user-container ::placeholder{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .user-container option{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 
 @media screen and (max-width: 768px) {
     .light{
