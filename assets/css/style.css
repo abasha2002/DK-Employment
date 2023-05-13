@@ -1791,6 +1791,11 @@
     border: 1px solid rgba(239, 242, 252, 0.05);
     border-radius: 10px;
 }
+.user .user-container .table-div{
+    border: 1px solid rgba(239, 242, 252, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
 .user .user-container table th{
     padding: 17px 24px;
     background: rgba(239, 242, 252, 0.02);
@@ -1825,8 +1830,7 @@
     align-items: center;
 }
 .user .index-header .user-mobile-header{
-    padding-top: 36px;
-    padding-bottom: 27px;
+    padding: 36px 0px 27px 0px;
     display: none;
 }
 .user .index-header .user-mobile-header h2{
@@ -2441,7 +2445,7 @@
     .user .user-container{
         background-color: unset !important;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
     .user .index-header .user-mobile-header{
         display: block !important;
@@ -2479,6 +2483,9 @@
     .index .section2 .section2-tables ul .p-div {
         padding: 13px 16px;
     }
+    .user .index-header .user-mobile-header h2{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 320px) {
     .auth #social-media{
@@ -2508,5 +2515,8 @@
     }
     .index .section2 .section2-tables ul .p-div {
         padding: 9px 16px;
+    }
+    .user .index-header .user-mobile-header h2{
+        font-size: 14px;
     }
 }
