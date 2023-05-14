@@ -175,21 +175,23 @@ if (isAmountHiddenDesktop) {
   moneyAmountDesktop.style.display = "none";
 }
 
-moneyShowHideDesktop.addEventListener('click', function(){
-  isAmountHiddenDesktop = !isAmountHiddenDesktop;
-  if (isAmountHiddenDesktop) {
-    moneyShowHideDesktop.setAttribute("src", "./assets/images/hide-password.svg");
-    moneyShowHideDesktop.style.opacity = ".2";
-    moneyAmountDesktop.style.display = "none";
-    moneyCirclesDesktop.style.display = "inline";
-  } else {
-    moneyShowHideDesktop.setAttribute("src", "./assets/images/show-password.svg");
-    moneyShowHideDesktop.style.opacity = ".2";
-    moneyAmountDesktop.style.display = "inline";
-    moneyCirclesDesktop.style.display = "none";
-  }
-  localStorage.setItem('isAmountHiddenDesktop', isAmountHiddenDesktop.toString());
-});
+if(moneyShowHideDesktop){
+  moneyShowHideDesktop.addEventListener('click', function(){
+    isAmountHiddenDesktop = !isAmountHiddenDesktop;
+    if (isAmountHiddenDesktop) {
+      moneyShowHideDesktop.setAttribute("src", "./assets/images/hide-password.svg");
+      moneyShowHideDesktop.style.opacity = ".2";
+      moneyAmountDesktop.style.display = "none";
+      moneyCirclesDesktop.style.display = "inline";
+    } else {
+      moneyShowHideDesktop.setAttribute("src", "./assets/images/show-password.svg");
+      moneyShowHideDesktop.style.opacity = ".2";
+      moneyAmountDesktop.style.display = "inline";
+      moneyCirclesDesktop.style.display = "none";
+    }
+    localStorage.setItem('isAmountHiddenDesktop', isAmountHiddenDesktop.toString());
+  });
+}
 
 
 //animation for successfully sending service
@@ -209,10 +211,12 @@ function loading(){
 
 var progressContainer = document.getElementById("progress-container");
 
-progressContainer.addEventListener("animationend", function(){
-  progressContainer.style.display = "none";
-  document.getElementById("success").style.setProperty('display', 'block', 'important');
-});
+if(progressContainer){
+  progressContainer.addEventListener("animationend", function(){
+    progressContainer.style.display = "none";
+    document.getElementById("success").style.setProperty('display', 'block', 'important');
+  });
+}
 
 
 //
@@ -235,7 +239,11 @@ function sending(){
     document.getElementById("after-sending").style.justifyContent = "center";
     document.getElementById("progress-container1").style.display = "block";
 }
-document.getElementById("progress-container1").addEventListener("animationed", function(){
-  document.getElementById("progress-container1").style.setProperty('display', 'none', 'important');
-  document.getElementById("successful").style.setProperty('display', 'block', 'important');
-});
+
+var progressContainer1 = document.getElementById("progress-container1");
+if(progressContainer1){
+  progressContainer1.addEventListener("animationed", function(){
+    document.getElementById("progress-container1").style.setProperty('display', 'none', 'important');
+    document.getElementById("successful").style.setProperty('display', 'block', 'important');
+  });
+}

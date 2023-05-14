@@ -12,7 +12,7 @@
 </head>
 <body class="index user">
     <header class="index-header">
-        <div class="container">
+        <div class="container user-header">
             <div class="row align-items-center">
                 <div class="col-12 d-flex align-items-md-center align-items-start">
                     <div class="header-company-logo">
@@ -68,6 +68,14 @@
                 </div>
             </div>
         </div>
+        <div class="container user-mobile-header">
+            <div class="d-flex justify-content-center position-relative">
+                <a class="position-absolute" href="index.html" style="left: 0;">
+                    <img src="./assets/images/left-side-arrow.svg" alt="arrow icon">
+                </a>
+                <h2>დეველოპერები</h2>
+            </div>
+        </div>
     </header>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog burger-menu-modal-dialog">
@@ -103,69 +111,67 @@
         </div>
     </div>
 
-    <section class="user-container position-relative">
-        <div class="container d-flex">
-            <div>
-                <h1>მყიდველის გაგზავნა</h1>
-                <p>მყიდველის გაგზავნა ასეთი მარტივი არასდროს ყოფილა. გამოგვიგზავნე მყიდველის მონაცემები და მიიღე საკომისიო.</p>
-                <form action="" class="user-form">
-                    <input type="text" placeholder="სახელი, გვარი">
-                    <input type="text" placeholder="მობილური">
-                    <div class="position-relative user-select">
-                        <img  src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
-                        <select name="დეველოპერი კომპანია" id="development company">
-                            <option value="დეველოპერი კომპანია" selected disabled>აირჩიე დეველოპერი კომპანია</option>
-                            <option value="დეველოპერი კომპანია 1">დეველოპერი კომპანია 1</option>
-                            <option value="დეველოპერი კომპანია 2">დეველოპერი კომპანია 2</option>
-                            <option value="დეველოპერი კომპანია 3">დეველოპერი კომპანია 3</option>
-                            <option value="დეველოპერი კომპანია 4">დეველოპერი კომპანია 4</option>
-                            <option value="დეველოპერი კომპანია 5">დეველოპერი კომპანია 5</option>
-                        </select>
-                    </div>
-                    <div class="position-relative user-select">
-                        <img src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
-                        <select name="სერვისი" id="select-service">
-                            <option value="სერვისი" selected disabled>აირჩიე სერვისი</option>
-                            <option value="სერვისი1">სერვისი 1</option>
-                            <option value="სერვისი2">სერვისი 2</option>
-                            <option value="სერვისი3">სერვისი 3</option>
-                        </select>
-                    </div>
-                    <textarea name="კომენტარი" id="textareaForComment" placeholder="დაწერეთ კომენტარი"></textarea>
-                </form>
-                <div class="sending-user-animation">
-                    <button id="sendButton1" onclick="sending()">გაგზავნე მომხმარებელი<img class="user-icon" style="margin-left: 11px;" src="./assets/images/user.svg" alt="user icon"></button>
-                </div>
-            </div>
-            <div class="user-sending-image" style="margin-left: auto;">
-                <img src="./assets/images/send-user.png" alt="sending user icon">
-            </div>
-        </div>
-        <div class="after-sending position-absolute" style="z-index: 5;" id="after-sending">
-            <div id="progress-container1">
-                <div class="line-box">
-                    <div class="line" id="line"></div>
-                </div>
-            </div>
-            <div class="afterLoad success" id="successful">
-                <div class="position-absolute closing-x">
-                    <img class="close" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
-                </div>
-                <img src="./assets/images/success.svg" alt="successfuly send">
-                <h4>მომხმარებელი წარმატებით გაიგზავნა</h4>
 
-                <a href="#">ნახეთ გაგზავნილი მომხმარებლები</a>
+    <section class="developers-section">
+        <div class="container">
+            <div class="developers-header" style="margin-bottom: 26px;">
+                <h1>დეველოპერები</h1>
             </div>
-            <div class="afterLoad fail">
-                <img src="./assets/images/fail.svg" alt="sending request failed">
-                <h4>მომხმარებელი ვერ გაიგზავნა</h4>
+            <div class="developers-inputs-container d-flex justify-content-between">
+                <div class="developers-home">
+                    <img src="./assets/images/home-made-of-paper.png" alt="image of home made of paper">
+                </div>
+                <div class="developers-inputs">
+                    <div>
+                        <label for="places">აირჩიეთ ადგილმდებარეობა</label>
+                        <div class="position-relative">
+                            <img class="position-absolute" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                            <select name="place" id="places">
+                                <option value="" selected disabled>აირჩიეთ ადგილმდებარეობა</option>
+                                <option value="">თბილისი</option>
+                                <option value="">ბათუმი</option>
+                                <option value="">ქუთაისი</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="services">აირჩიეთ სერვისი</label>
+                        <div class="position-relative">
+                            <img class="position-absolute" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                            <select name="service" id="services">
+                                <option value="აირჩიე სერვისი" selected disabled>აირჩიე სერვისი</option>
+                                <option value="სერვისი 1">სერვისი 1</option>
+                                <option value="სერვისი 2">სერვისი 2</option>
+                                <option value="სერვისი 3">სერვისი 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="developer-company">აირჩიეთ დეველოპერი კომპანია</label>
+                        <div class="position-relative">
+                            <img class="position-absolute" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                            <select name="developer company" id="developer-company" style="padding: 11.2px 16px;">
+                                <option value="აირჩიე დეველოპერი კომპანია" selected disabled>აირჩიე სერვისი</option>
+                                <option value="დეველოპერი კომპანია 1">დეველოპერი კომპანია 1</option>
+                                <option value="დეველოპერი კომპანია 2">დეველოპერი კომპანია 2</option>
+                                <option value="დეველოპერი კომპანია 3">დეველოპერი კომპანია 3</option>
+                                <option value="დეველოპერი კომპანია 4">დეველოპერი კომპანია 4</option>
+                                <option value="დეველოპერი კომპანია 5">დეველოპერი კომპანია 5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <a href="#">სცადეთ თავიდან</a>
-            </div> 
+            <div style="margin-top: 68px; text-align: center;">
+                <a href="">
+                    <button>შემდეგი <img style="margin-left: 10px;" src="./assets/images/next-page.svg" alt="arrow"></button>
+                </a>
+            </div>
         </div>
     </section>
 
-    
+
     <footer class="p-0">
         <div class="container mobile-footer d-flex align-items-center justify-content-evenly">
             <img src="./assets/images/home.svg" alt="home icon">

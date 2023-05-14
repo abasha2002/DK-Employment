@@ -548,6 +548,22 @@
 .light .index-header .user-mobile-header h2{
     color: #000000;
 }
+.light .developers-section h1{
+    color: #000000;
+}
+.light .developers-section .developers-inputs label{
+    color: #000000;
+}
+.light .developers-section .developers-inputs select{
+    color: #000000;
+}
+.light .developers-section .developers-inputs option{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.light .developers-section .developers-inputs img{
+    filter: invert(100%);
+}
 
 @media screen and (max-width: 768px) {
     .light{
