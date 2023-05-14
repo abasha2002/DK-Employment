@@ -2553,7 +2553,7 @@
         margin-top: 174px;
     }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
     .auth #social-media{
         justify-content: space-between;
         gap: unset !important;
