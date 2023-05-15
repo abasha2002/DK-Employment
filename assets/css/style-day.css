@@ -567,6 +567,29 @@
 .light .developers-section .developers-inputs img{
     filter: invert(100%);
 }
+.light .developers-section a{
+    color: #000000;
+}
+.light .developers-section a img{
+    filter: invert(100%);
+}
+.light .developers-section .developers1-inputs label{
+    color: #000000;
+}
+.light .developers-section .developers1-inputs > div > input{
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.light .developers-section .developers1-inputs p{
+    color: #000000;
+}
+.light .developers-section .developers1-inputs span{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .developers-section .upload-image p{
+    color: #000000;
+}
+
 
 @media screen and (max-width: 768px) {
     .light{

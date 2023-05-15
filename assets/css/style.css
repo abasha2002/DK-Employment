@@ -1589,9 +1589,6 @@
     display: none;
 }
 
-.user{
-    background: #000212 !important;
-}
 .user .user-container{
     background-color: #0B0F19;
     margin-top: 104px;
@@ -1830,7 +1827,6 @@
     align-items: center;
 }
 .user .index-header .user-mobile-header{
-    padding: 36px 0px 27px 0px;
     display: none;
 }
 .user .index-header .user-mobile-header h2{
@@ -1944,7 +1940,7 @@
     transform: translateY(-50%);
     right: 20px;
 }
-.user .developers-section button{
+.user .developers-section .next{
     width: 147px;
     border: none;
     outline: 0;
@@ -1952,6 +1948,98 @@
     border-radius: 10px;
     padding: 17px 0px;
     margin-bottom: 60px;
+
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #EFF2FC;
+}
+.user .developers-section a{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: rgba(239, 242, 252, 0.8);
+    text-decoration: none;
+}
+.user .developers-section .developers1-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 530px;
+}
+.user .developers-section .developers1-inputs label{
+    display: block;
+    margin-bottom: 16px;
+
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;;
+    letter-spacing: 0.0015em;
+    color: #EFF2FC;
+}
+.user .developers-section .developers1-inputs > div > input{
+    background-color: inherit;
+    width: 100%;
+    outline: 0;
+    border: 2px solid rgba(239, 242, 252, 0.1);
+    padding: 16px;
+    border-radius: 10px;
+
+    font-family: 'HL';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #EFF2FC;
+}
+.user .developers-section .developers1-inputs p{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    margin: 0;
+}
+.user .developers-section .developers1-inputs span{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: rgba(239, 242, 252, 0.6);
+}
+.user .developers-section .upload-image{
+    margin-top: 36px;
+}
+.user .developers-section .upload-image p{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    margin: 0;
+}
+.user .developers-section .upload-image button{
+    width: 188px;
+    background: #4F52B4;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    padding: 17px 0px;
 
     font-family: 'HR';
     font-style: normal;
@@ -2499,7 +2587,7 @@
         width: 100% !important;
     }
     .user .user-container {
-        margin-top: 150px;
+        margin-top: 110px;
     }
     .user .user-container p{
         margin-bottom: 10px;
@@ -2552,7 +2640,11 @@
         display: none;
     }
     .user .developers-section{
-        margin-top: 174px;
+        margin-top: 110px;
+    }
+    .user .developers-section .developers1-inputs{
+        width: 100%;
+        padding: 0px 8px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -2583,6 +2675,9 @@
     }
     .user .index-header .user-mobile-header h2{
         font-size: 16px;
+    }
+    .user .developers-section .switchers{
+        display: block !important;
     }
 }
 @media screen and (max-width: 320px) {
