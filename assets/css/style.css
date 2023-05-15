@@ -1351,9 +1351,6 @@
     border-radius: 5px;
     margin-right: 16px;
 }
-.index .section4 .second-charts .chart-info{
-    margin-bottom: 24px;
-}
 .index .section4 .second-charts .chart-info h5{
     font-family: 'HR';
     font-style: normal;
@@ -1362,6 +1359,7 @@
     line-height: 12px;
     letter-spacing: 0.0015em;
     color: #EFF2FC;
+    margin: 0;
 }
 .index footer{
     margin-top: 100px;
@@ -1496,6 +1494,7 @@
 .index footer .mobile-footer .plus-sign span{
     color:#EFF2FC;
     font-size: 30px;
+    padding-bottom: 5px;
 }
 .index .section2 .section2-tables .mobile-table-text{
     display: none;
@@ -1616,7 +1615,7 @@
     line-height: 20px;
     letter-spacing: 0.04em;
     color: rgba(239, 242, 252, 0.8);
-    margin: 0;
+    margin-bottom: 20px;
 }
 .user .user-container form{
     width: 530px;
@@ -1709,6 +1708,7 @@
     border-radius: 10px;
     width: 282px;
     height: 49px;
+    border: none;
 
     font-family: 'HR';
     font-style: normal;
@@ -2392,8 +2392,7 @@
     }
     .index .section4{
         margin-top: 16px !important;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 24px 20px;
     }
     .index .section4 .sec4-header{
         padding: 0;
@@ -2415,6 +2414,9 @@
     }
     .index .day-chart-info{
         display: none;
+    }
+    .index .section4 .second-charts{
+        margin-top: 24px;
     }
     .index .section4 .second-charts .total{
         display: inline-block;
