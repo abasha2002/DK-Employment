@@ -101,6 +101,71 @@
         </div>
     </section>
     
-    <script src="app.js"></script>
+    <script>
+        const toggleButton = document.getElementById("toggle-btn");
+        const body = document.querySelector("body");
+        let theme = localStorage.getItem("light-mode");
+
+        const enableLightMode = () =>{
+        body.classList.add("light");
+        body.classList.add("theme-transition");
+        localStorage.setItem("light-mode", "enabled");
+        };
+
+        const disableLightMode = () =>{
+        body.classList.remove("light");
+        body.classList.add("theme-transition");
+        localStorage.setItem("light-mode", "disabled");
+        };
+
+        if(theme === "enabled"){
+        enableLightMode();
+        }else if (theme === "disabled") {
+        disableLightMode();
+        }
+
+        if(toggleButton){
+        toggleButton.addEventListener('click', () => {
+            if(theme === "disabled"){
+            enableLightMode();
+            }else{
+            disableLightMode();
+            }
+            theme = localStorage.getItem("light-mode");
+        })
+
+
+        if (theme === null) {
+            toggleButton.click();
+        }
+
+        if (body.classList.contains("theme-transition")) {
+            toggleButton.style.transition = "none";
+            setTimeout(() => toggleButton.style.transition = "", 1000); // Add transition after a delay
+            body.classList.remove("theme-transition");
+        }
+        }
+
+        //show/hide password
+        const passwordInput = document.getElementById('passwordInput');
+        const showHideButton = document.getElementById('showHideButton');
+        const showPasswordIcon = document.getElementById('showPasswordIcon');
+        const hidePasswordIcon = document.getElementById('hidePasswordIcon');
+
+        if(showHideButton){
+        showHideButton.addEventListener('click', function() {
+            if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            showPasswordIcon.style.display = 'inline';
+            hidePasswordIcon.style.display = 'none';
+            } else {
+            passwordInput.type = 'password';
+            showPasswordIcon.style.display = 'none';
+            hidePasswordIcon.style.display = 'inline';
+            }
+        });
+        }
+
+    </script>
 </body>
 </html>

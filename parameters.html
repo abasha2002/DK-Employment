@@ -151,6 +151,45 @@
         </div>
     </section>
 
-    <script src="app.js"></script>
+    <script>
+
+        const switcher = document.getElementById("parameters-switcher")
+        const body = document.querySelector("body");
+        let theme = localStorage.getItem("light-mode");
+
+        const enableLightMode = () =>{
+        body.classList.add("light");
+        body.classList.add("theme-transition");
+        localStorage.setItem("light-mode", "enabled");
+        };
+
+        const disableLightMode = () =>{
+        body.classList.remove("light");
+        body.classList.add("theme-transition");
+        localStorage.setItem("light-mode", "disabled");
+        };
+
+        if(theme === "enabled"){
+        enableLightMode();
+        }else if (theme === "disabled") {
+        disableLightMode();
+        }        
+
+
+        if(switcher){
+        switcher.addEventListener('click', () => {
+            if(theme === "disabled"){
+            enableLightMode();
+            }else{
+            disableLightMode();
+            }
+            theme = localStorage.getItem("light-mode");
+        })
+
+        if (theme === "enabled") {
+            switcher.checked = true;
+        }
+        }
+    </script>
 </body>
 </html>

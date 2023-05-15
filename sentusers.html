@@ -398,6 +398,27 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script>
+        const body = document.querySelector("body");
+        let theme = localStorage.getItem("light-mode");
+
+        const enableLightMode = () =>{
+        body.classList.add("light");
+        body.classList.add("theme-transition");
+        localStorage.setItem("light-mode", "enabled");
+        };
+
+        const disableLightMode = () =>{
+        body.classList.remove("light");
+        body.classList.add("theme-transition");
+        localStorage.setItem("light-mode", "disabled");
+        };
+
+        if(theme === "enabled"){
+        enableLightMode();
+        }else if (theme === "disabled") {
+        disableLightMode();
+        }
+    </script>
 </body>
 </html>
