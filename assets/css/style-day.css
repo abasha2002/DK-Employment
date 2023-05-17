@@ -570,7 +570,7 @@
 .light .developers-section a{
     color: #000000;
 }
-.light .developers-section a img{
+.light .developers-section .pageSwap{
     filter: invert(100%);
 }
 .light .developers-section .developers1-inputs label{
@@ -588,6 +588,30 @@
 }
 .light .developers-section .upload-image p{
     color: #000000;
+}
+.light .developers-section .developers1-inputs h3{
+    color: #000000;
+}
+.light .developers-section .developers1-inputs select{
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.light .developers-section .developers1-inputs textarea{
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.light .developers-section .developers1-inputs .select-options img{
+    filter: invert(100%);
+}
+.light .developers-section .renders p{
+    color: #000000;
+}
+.light .developers-section .last-textarea label{
+    color: #000000;
+}
+.light .developers-section .last-textarea textarea{
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 

@@ -800,7 +800,7 @@
     margin-top: 31px;
 }
 .index #exampleModal1 .afterLoad a{
-    font-family: 'Helvetica Neue LT GEO';
+    font-family: 'HL';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1849,7 +1849,7 @@
     padding: 0px 8px;
 }
 .user .user-container .mobile-user-container ul li{
-    padding: 18px 0px;
+    padding: 21px 0px;
 }
 .user .user-container .mobile-user-container ul li img{
     margin-right: 20px;
@@ -1990,7 +1990,7 @@
     width: 100%;
     outline: 0;
     border: 2px solid rgba(239, 242, 252, 0.1);
-    padding: 16px;
+    padding: 15.4px 16px;
     border-radius: 10px;
 
     font-family: 'HL';
@@ -2049,6 +2049,151 @@
     letter-spacing: 0.0025em;
     color: #EFF2FC;
 }
+.user .developers-section .swap-next-page{
+    text-align: right;
+}
+.user .developers-section .previousPage{
+    display: none;
+}
+.user .developers-section .developers1-inputs h3{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #EFF2FC;
+    margin-bottom: 16px;
+}
+
+.user .developers-section .developers1-inputs  select{
+    background-color: inherit;
+    width: 100%;
+    outline: 0;
+    border: 2px solid rgba(239, 242, 252, 0.1);
+    padding: 15.4px 16px;
+    border-radius: 10px;
+    appearance: none;
+
+    font-family: 'HL';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #EFF2FC;
+}
+.user .developers-section .developers1-inputs  textarea{
+    background-color: inherit;
+    width: 100%;
+    height: 80px;
+    outline: 0;
+    border: 2px solid rgba(239, 242, 252, 0.1);
+    padding: 15.4px 16px;
+    border-radius: 10px;
+    resize: none;
+
+    font-family: 'HL';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #EFF2FC;
+}
+.user .developers-section .renders p{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    margin: 0;
+}
+.user .developers-section .render{
+    height: 150px;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+.user .developers-section .last-textarea label{
+    display: block;
+    margin-bottom: 16px;
+
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;;
+    letter-spacing: 0.0015em;
+    color: #EFF2FC;
+}
+.user .developers-section .last-textarea textarea{
+    background-color: inherit;
+    width: 100%;
+    height: 80px;
+    outline: 0;
+    border: 2px solid rgba(239, 242, 252, 0.1);
+    padding: 15.4px 16px;
+    border-radius: 10px;
+    resize: none;
+
+    font-family: 'HL';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #EFF2FC;
+}
+.user .developers-section .developers-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.user .developers-section .developers-filter h2{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #EFF2FC;
+    margin-bottom: 24px;
+}
+.user .developers-section .developers-filter label{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: rgba(239, 242, 252, 0.6);
+}
+.user .developers-section .developers-filter input{
+    width: 40px;
+    height: 24px;
+}
+.user .developers-section .developers-filter .mobile-check{
+    display: none;
+}
+.user .developers-section .developers-filter .add button{
+    width: 151px;
+    background: #4F52B4;
+    border-radius: 10px;
+    padding: 15px 0px;
+    border: none;
+    outline: 0;
+
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #EFF2FC;
+
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1400px){
     .index .section1 .service{
@@ -2067,8 +2212,9 @@
     .user .user-container .user-sending-image{
         display: none;
     }
-    .user .developers-section .developers-home{
-        display: none;
+    .user .developers-section .developers-home img{
+        width: 400px ;
+        height: 400px ;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2096,6 +2242,10 @@
     }
     .user .developers-section .developers-home{
         display: none;
+    }
+    .user .developers-section .developers-home img{
+        width: 200px !important;
+        height: 200px !important;
     }
 }
 @media screen and (max-width: 768px) {
@@ -2645,6 +2795,44 @@
     .user .developers-section .developers1-inputs{
         width: 100%;
         padding: 0px 8px;
+    }
+    .user .developers-section .upload-image{
+        padding: 0px 8px;
+    }
+    .user .developers-section .swap-next-page{
+        padding: 0px 8px;
+    }
+    .user .developers-section .swap-next-page2{
+        padding: 0px 8px;
+    }
+    .user .developers-section .previousPage{
+        display: inline;
+    }
+    .user .developers-section .swap-next-page{
+        display: flex;
+        justify-content: space-between;
+    }
+    .user .developers-section .last-textarea{
+        display: none;
+    }
+    .user .developers-section .renders .mobile-render{
+        margin-top: 24px;
+    }
+    .user .developers-section .renders{
+        padding: 0px 8px;
+    }
+    .user .developers-section .developers-filter{
+        padding: 0px 8px;
+    }
+    .user .developers-section .developers-filter .developers-check{
+        justify-content: space-between !important;
+        padding: 0;
+    }
+    .user .developers-section .developers-filter .mobile-check{
+        display: inline !important;
+    }
+    .user .developers-section .developers-filter .desktop-check{
+        display: none !important;
     }
 }
 @media screen and (max-width: 400px) {

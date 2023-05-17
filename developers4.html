@@ -116,101 +116,95 @@
         <div class="container">
             <div class="developers1-inputs">
                 <div>
-                    <label>დასახელება</label>
+                    <label>ფასადი</label>
                     <input type="text">
                 </div>
 
                 <div>
-                    <label>დეველოპერის ბრენდი</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label>საკონტაქტო პირის სახელი და გვარი</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label>საიდენტიფიკაციო კოდი</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label>საკონტაქტო ტელეფონის ნომერი</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label>საკონტაქტო ელ.ფოსტა</label>
-                    <input type="text">
-                </div>
-
-                <div style="margin-bottom: 12px;">
-                    <label>პასუხისმგებელლი პირი</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label>DK CAPITAL-ის წარმომადგენლის სახელი დ გვარი</label>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <label>DK CAPITAL-ის წარმომადგენლის ელ.ფოსტა</label>
-                    <input type="text">
-                </div>
-
-                <div style="margin-bottom: 12px;">
-                    <label>DK CAPITAL-ის წარმომადგენლის მობილური</label>
-                    <input type="text">
-                </div>
-
-                <div class="switchers d-flex justify-content-between align-items-center">
-                    <div>
-                        <p>განშლა</p>
-                    </div>
-                    <div class="d-flex align-items-center" style="gap: 40px; margin-right: 6px;">
-                        <div class="d-flex align-items-center" style="gap: 16px;">
-                            <span>ჩართვა</span>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch">
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center" style="gap: 16px;">
-                            <span>ჩართვა</span>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch">
-                            </div>
-                        </div>
+                    <label>ლიფთი</label>
+                    <div class="position-relative select-options">
+                        <img class="position-absolute" style="top: 50%; transform: translateY(-50%); right: 22px;" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                        <select name="street">
+                            <option value="" selected disabled>სამგზავრო</option>
+                        </select>
                     </div>
                 </div>
-
+                
                 <div>
-                    <label>ვებ გვერდი</label>
+                    <label>41 დადგენილება</label>
                     <input type="text">
                 </div>
 
                 <div>
-                    <label>ფეისბუქის გვერდი</label>
+                    <label>მომსახურების ყოველთვიური გადასახადი</label>
                     <input type="text">
                 </div>
 
                 <div>
-                    <label>მომსახურების ტიპი</label>
+                    <label>საცხოვრებელი / აპარტამენტი</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>გაზიფიცირება</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>დამატებითი გადასახადი გაზის შეყვანაზე</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>ჭერის სიმაღლე</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>გაქირავების სერვისი</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>სადარბაზო</label>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <label>ჯამური ბინების რაოდენობა</label>
                     <input type="text">
                 </div>
             </div>
-            <div class="upload-image">
+
+            <div class="renders" style="margin-top: 36px;">
                 <div>
-                    <p>ლოგო</p>
+                    <p>სურათები / რენდერები</p>
                 </div>
-                <div style="text-align: center; margin-top: 36px;">
-                    <button>ფოტოს ატვირთვა</button>
+
+                <div class="row gx-4" style="margin-top: 16px;">
+                    <div class="col-md-3 col-6">
+                        <div class="render"></div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="render"></div>
+                    </div>
+                    <div class="col-md-3 col-6 mobile-render">
+                        <div class="render"></div>
+                    </div>
+                    <div class="col-md-3 col-6 mobile-render">
+                        <div class="render"></div>
+                    </div>
                 </div>
             </div>
-            <div class="swap-next-page" style="margin-top: 63px; margin-bottom: 150px; text-align: right;">
-                <a class="previousPage" href="developers.html"><img class="pageSwap" style="margin-right: 10px;" src="./assets/images/leftSideArrow.svg" alt="arrow icon"> უკან</a>
-                <a href="developers2.html">შემდეგი <img class="pageSwap" style="margin-left: 10px;" src="./assets/images/rightSideArrow.svg" alt="arrow icon"></a>
+
+            <div class="last-textarea" style="margin-top: 36px;">
+                <label>დამატებითი ინფორმაცია</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="swap-next-page2 d-flex justify-content-between" style="margin-top: 63px; margin-bottom: 150px;">
+                <a href="developers3.html"><img class="pageSwap" style="margin-right: 10px;" src="./assets/images/leftSideArrow.svg" alt="arrow icon"> უკან</a>
+                <a href="developers5.html">შემდეგი <img class="pageSwap" style="margin-left: 10px;" src="./assets/images/rightSideArrow.svg" alt="arrow icon"></a>
             </div>
         </div>
     </section>
