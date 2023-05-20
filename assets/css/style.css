@@ -2020,6 +2020,18 @@
     letter-spacing: 0.04em;
     color: rgba(239, 242, 252, 0.6);
 }
+.user .developers-section .developers1-inputs .developers1-switcher:checked{
+    background-color: #4F52B4;
+    background-position: 20px;
+}
+.user .developers-section .developers1-inputs .developers1-switcher{
+    width: 40px;
+    height: 24px;
+    background-color: inherit;
+    background-image: url(../images/white-dot.svg);
+    background-size: 16px 16px;
+    background-position: 4px;
+}
 .user .developers-section .upload-image{
     margin-top: 36px;
 }
@@ -2193,6 +2205,20 @@
     letter-spacing: 0.04em;
     color: #EFF2FC;
 }
+.user .developers-filter input:not(:checked){
+    width: 40px;
+    height: 24px;
+    background-color: inherit;
+    background-image: url(../images/white-dot.svg);
+    background-size: 16px 16px;
+    background-position: 4px;
+}
+.user .developers-filter input:checked{
+    background-color: #4F52B4;
+    background-position: 20px;
+    background-image: url(../images/white-dot.svg);
+    background-size: 16px 16px;
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1400px){
     .index .section1 .service{
@@ -2211,9 +2237,8 @@
     .user .user-container .user-sending-image{
         display: none;
     }
-    .user .developers-section .developers-home img{
-        width: 400px ;
-        height: 400px ;
+    .user .developers-section .developers-home{
+        display: none;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -2241,10 +2266,6 @@
     }
     .user .developers-section .developers-home{
         display: none;
-    }
-    .user .developers-section .developers-home img{
-        width: 200px !important;
-        height: 200px !important;
     }
 }
 @media screen and (max-width: 768px) {
@@ -2442,9 +2463,6 @@
         display: block !important;
     }
     .index .section1{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        max-width: 100%;
         margin-top: 138px !important;
     }
     .index .section1 .mobile-service-header{
@@ -2454,6 +2472,12 @@
         margin-top: 0 !important;
         background: rgba(11, 15, 25, 0.8) !important;
         padding: 24px 20px;
+    }
+    .index .section1 .send-button{
+        text-align: center;
+    }
+    .index .section1 .send-button button{
+        width: 270px;
     }
     .index .section1 .mobile-service-header{
         font-family: 'HB';
@@ -2483,7 +2507,7 @@
     }
     .index .section1 .service .animation-texts{
         height: 24px !important;
-        width: 100%;
+        width: 171px;
         overflow: hidden !important;
     }
     @keyframes slide-up-down {
@@ -2558,9 +2582,6 @@
     .index .section2{
         padding-left: 20px;
         padding-right: 20px;
-    }
-    .index .section2 .section2-header{
-        padding: 0;
     }
     .index .section2 .section2-tables table{
         display: none !important;
@@ -2799,6 +2820,9 @@
         padding: 0px 8px;
     }
     .user .developers-section .swap-next-page{
+        padding: 0px 8px;
+    }
+    .user .developers-section .swap-pages{
         padding: 0px 8px;
     }
     .user .developers-section .swap-next-page2{
