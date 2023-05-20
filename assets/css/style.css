@@ -2819,6 +2819,16 @@
     .user .developers-section .upload-image{
         padding: 0px 8px;
     }
+    .user .developers-section .upload-image .add-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-image: url(../images/add-image.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
     .user .developers-section .swap-next-page{
         padding: 0px 8px;
     }
