@@ -619,6 +619,32 @@
 .light .developers-section .developers-filter label{
     color: rgba(0, 0, 0, 0.6);
 }
+.light .developers-section .developers1-inputs .developers1-switcher{
+    background-color: lightgrey;
+    border: none;
+}
+.light .developers-filter input:not(:checked){
+    background-color: lightgrey;
+    border: none;
+}
+.light .filter-canvas .offcanvas-header h3{
+    color: #000000;
+}
+.light .filter-canvas .offcanvas-header img{
+    filter: invert(100%);
+}
+.light .filter-canvas input{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+.light .filter-canvas select{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+.light .filter-canvas option{
+    background-color: white;
+    color: #000000;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -724,5 +750,8 @@
     }
     .light .day-chart-info{
         display: block;
+    }
+    .user .developers-section .upload-image .add-image{
+        background-image: url(../images/add-image-light.png);
     }
 }

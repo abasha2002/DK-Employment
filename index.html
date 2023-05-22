@@ -212,7 +212,7 @@
     <section class="container-fluid section2">
         <div class="section2-header p-0 container d-flex justify-content-between">
             <h2>კატეგორიები</h2>
-            <img data-bs-toggle="modal" data-bs-target="#filterModal" style="cursor: pointer;" src="./assets/images/filter.svg" alt="icon to filter information">
+            <img  data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="cursor: pointer;" src="./assets/images/filter.svg" alt="icon to filter information">
         </div>
 
         <div class="section2-spotlight"></div>
@@ -363,7 +363,61 @@
             </div>
         </div>
     </section>
-    <div class="modal fade" id="filterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+    <div class="offcanvas offcanvas-end filter-canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h3>გაფილტვრა</h3>
+            <img class="close" data-bs-dismiss="offcanvas" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
+        </div>
+        <div class="offcanvas-body">
+            <div class="modal-inputs" id="filter-modal-inputs">
+                <form action="" class="modal-form">
+                    <input type="text" placeholder="სახელი, გვარი">
+                    <input type="text" placeholder="მობილური">
+                    <input type="text" placeholder="გაყიდვების მენეჯერი">
+                    <div class="position-relative select">
+                        <img src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                        <select name="დეველოპერი კომპანია" id="development company">
+                            <option value="დეველოპერი კომპანია" selected disabled>აირჩიე დეველოპერი კომპანია</option>
+                            <option value="დეველოპერი კომპანია 1">დეველოპერი კომპანია 1</option>
+                            <option value="დეველოპერი კომპანია 2">დეველოპერი კომპანია 2</option>
+                            <option value="დეველოპერი კომპანია 3">დეველოპერი კომპანია 3</option>
+                        </select>
+                    </div>
+                    <div class="position-relative select">
+                        <img src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                        <select name="სერვისი" id="select-service">
+                            <option value="სერვისი" selected disabled>აირჩიე სერვისი</option>
+                            <option value="სერვისი1">სერვისი 1</option>
+                            <option value="სერვისი2">სერვისი 2</option>
+                            <option value="სერვისი3">სერვისი 3</option>
+                        </select>
+                    </div>
+                    <div class="d-flex" style="gap: 20px;">
+                        <div class="position-relative select" style="width: 100%;">
+                            <img style="left: 85.5%;" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                            <select>
+                                <option value="" selected disabled>-დან</option>
+                            </select>
+                        </div>
+                        <div class="position-relative select" style="width: 100%;">
+                            <img style="left: 85.5%;" src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                            <select>
+                                <option value="" selected disabled>-მდე</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-exit services-modal-exit m-0" >
+                <button data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#offcanvasRight">გაფილტვრა</button>
+            </div>
+        </div>
+      </div>
+
+    <!-- <div class="modal fade" id="filterModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog filter-modal-dialog">
             <div class="modal-content filter-modal-content" id="filter-modal-content">
                 <div class="modal-header filter-modal-header" id="filter-modal-header">
@@ -418,7 +472,7 @@
                 </div>
               </div>
         </div>
-    </div>
+    </div> -->
     
     <section class="container-fluid section3 position-relative" style="z-index: 0;">
         <div class="container d-flex section3-container" style="gap: 109px;">
