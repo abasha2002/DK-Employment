@@ -646,6 +646,124 @@
     color: #000000;
 }
 
+.light .req-users-section h2{
+    color: #000000;
+}
+.light .req-users-section .req-users-header img{
+    filter: invert(100%);
+}
+.light .req-users-section-mobile h2{
+    color: #000000;
+}
+.light .req-users-section .for-req-users{
+    background: #FFFFFF;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.05);
+}
+.light .req-users-section .search-req-users input{
+    color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .search-req-users .search-icon{
+    filter: invert(100%);
+}
+.light .req-users-section #req-users li.active{
+    background: #F2F5FF;
+}
+.light .req-users-section #req-users li p{
+    color: #000000;
+}
+.light .req-users-section .for-req-users {
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.light .req-users-section .for-req-users a{
+    color: #000000;
+}
+.light .req-users-section .requested-user{
+    background: #FFFFFF;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.light .req-users-section .requested-user table th{
+    background: #F2F5FF;
+    color: #000000;
+}
+.light .req-users-section .requested-user table .first{
+    background: #F2F5FF;
+    color: rgba(0, 0, 0, 0.4);
+}
+.light .req-users-section .requested-user table .second{
+    background: #F2F5FF;
+    color: #000000;
+}
+.light .req-users-section .requested-user table .second img{
+    filter: invert(100%);
+}
+.light .req-users-section .mobile-user-container ul li h2{
+    color: #000000;
+}
+.light .req-users-section .mobile-user-container ul li img{
+    filter: invert(100%);
+}
+.light .req-users-section .mobile-user-container ul li p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .mobile-user-container ul li span{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .req-users-chat .users-text{
+    background-color: #FFFFFF;
+}
+.light .req-users-section .req-users-chat .users-text p{
+    color: #000000;
+}
+.light .req-users-section .req-users-chat .date p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .req-users-chat .write-text input{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .req-users-chat .write-text img{
+    filter: invert(100%);
+}
+.light .req-users-section .req-users-buttons button{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.8);
+}
+.light .req-users-section .req-users-buttons button:hover{
+    background: #4F52B4;
+    color: #FFFFFF;
+    border: none;
+}
+.light .req-users-section .second-table > div{
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.light .req-users-section .second-table table th{
+    background: #F2F5FF;
+    color: #000000;
+}
+.light .req-users-section .second-table table td{
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .for-req-users .see-all-users{
+    background: #F2F5FF !important; 
+}
+.light .req-users-section .mobile-user-container .overall p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .mobile-user-container .overall p img{
+    filter: invert(33%) sepia(100%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
+}
+.light .req-users-section-mobile img{
+    filter: invert(100%);
+}
+
 
 @media screen and (max-width: 768px) {
     .light{
@@ -751,7 +869,7 @@
     .light .day-chart-info{
         display: block;
     }
-    .user .developers-section .upload-image .add-image{
+    .light .developers-section .upload-image .add-image{
         background-image: url(../images/add-image-light.png);
     }
 }
