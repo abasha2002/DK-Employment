@@ -37,14 +37,14 @@
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="requesteduser.html">განსახილველი მომხმარებლები</a></li>
-                                <li><a class="dropdown-item" href="#">მოლაპარაკების პროცესში</a></li>
-                                <li><a class="dropdown-item" href="#">უკვე რეგისტრირებული</a></li>
-                                <li><a class="dropdown-item" href="#">დაუარებული მომხმარებლები</a></li>
-                                <li><a class="dropdown-item" href="#">არ იყიდა</a></li>
-                                <li><a class="dropdown-item" href="#">მოეწონა</a></li>
-                                <li><a class="dropdown-item" href="#">ჯავშანი</a></li>
-                                <li><a class="dropdown-item" href="#">გაყიდული</a></li>
-                                <li><a class="dropdown-item" href="#">გაყიდული / ჩარიცხული</a></li>
+                                <li><a class="dropdown-item" href="pendingusers.html">მოლაპარაკების პროცესში</a></li>
+                                <li><a class="dropdown-item" href="registeredusers.html">უკვე რეგისტრირებული</a></li>
+                                <li><a class="dropdown-item" href="rejectedusers.html">დაუარებული მომხმარებლები</a></li>
+                                <li><a class="dropdown-item" href="didnotbuy.html">არ იყიდა</a></li>
+                                <li><a class="dropdown-item" href="userliked.html">მოეწონა</a></li>
+                                <li><a class="dropdown-item" href="userbooked.html">ჯავშანი</a></li>
+                                <li><a class="dropdown-item" href="sold.html">გაყიდული</a></li>
+                                <li><a class="dropdown-item" href="paid.html">გაყიდული / ჩარიცხული</a></li>
                             </ul>
                         </div>
     
@@ -70,7 +70,7 @@
         </div>
         <div class="container req-users-section-mobile p-0">
             <div class="d-flex justify-content-center position-relative">
-                <a class="position-absolute" href="index.html" style="left: 0;">
+                <a class="position-absolute" href="requesteduser.html" style="left: 0;">
                     <img src="./assets/images/left-side-arrow.svg" alt="arrow icon">
                 </a>
                 <h2>განსახილველი მომხმარებლები</h2>
@@ -157,90 +157,92 @@
                         <span>150</span>
                     </li>
                 </ul>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>მომხმარებელი</th>
-                            <th>ტელეფონი</th>
-                            <th>მენეჯერი</th>
-                            <th>თარიღი</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>მომხმარებელი 1</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 2/</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 3</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 4</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 5</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 6</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 7</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 8</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 9</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 10</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 11</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td>მომხმარებელი 12</td>
-                            <td>599 000 XXX</td>
-                            <td>მარიამ ცაავა</td>
-                            <td>05.02.2023</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-for-all-users">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>მომხმარებელი</th>
+                                <th>ტელეფონი</th>
+                                <th>მენეჯერი</th>
+                                <th>თარიღი</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>მომხმარებელი 1</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 2</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 3</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 4</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 5</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 6</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 7</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 8</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 9</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 10</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 11</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                            <tr>
+                                <td>მომხმარებელი 12</td>
+                                <td>599 000 XXX</td>
+                                <td>მარიამ ცაავა</td>
+                                <td>05.02.2023</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -284,291 +286,327 @@
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/images/user-icon.svg" alt="user icon">
-                            <h2>მარიამ გაბოძე</h2>
+                    <a href="requserschat.html">
+                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/user-icon.svg" alt="user icon">
+                                <h2>მარიამ გაბოძე</h2>
+                            </div>
+                            <div>
+                                <p>599 999 999</p>
+                            </div>
                         </div>
-                        <div>
-                            <p>599 999 999</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>მენეჯერი: მარიამ ცაავა</span>
+                            <span>05.03.2023</span>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span>მენეჯერი: მარიამ ცაავა</span>
-                        <span>05.03.2023</span>
-                    </div>
+                    </a>
                 </li>
             </ul>
         </div>

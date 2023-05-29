@@ -706,7 +706,7 @@
     color: #000000;
 }
 .light .req-users-section .mobile-user-container ul li img{
-    filter: invert(100%);
+    filter: invert(33%) sepia(100%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
 }
 .light .req-users-section .mobile-user-container ul li p{
     color: rgba(0, 0, 0, 0.6);
@@ -764,6 +764,92 @@
     filter: invert(100%);
 }
 
+.light .chat-section{
+    background: #FFFFFF;
+}
+.light .chat-section img{
+    filter: invert(100%);
+}
+.light .chat-section .userIcon{
+    filter: invert(33%) sepia(100%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
+}
+.light .chat-section .requested-person .user-name{
+    color: #000000;
+}
+.light .chat-section .requested-person p{
+    color: rgba(0, 0, 0, 0.4);
+}
+.light .chat-section .requested-person span{
+    color: rgba(0, 0, 0, 0.4);;
+}
+.light .chat-section2{
+    background: #FFFFFF;
+}
+.light .chat-section2 img{
+    filter: invert(33%) sepia(100%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
+}
+.light .chat-section2 .chat-with-user h2{
+    color: #000000;
+    font-weight: 700;
+}
+.light .chat-section2 .chat-with-user .user-text{
+    background: #F2F5FF;
+    border-radius: 10px;
+    padding: 16px;
+    width: fit-content;
+}
+.light .chat-section2 .chat-with-user .chatting .user-text p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .chat-section2 .chat-with-user .company-text p{
+    color: #FFFFFF;
+}
+.light .chat-section2 .chat-with-user span{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .chat-section2 .send-text-input input{
+    background: #F2F5FF;
+    border: 1px solid rgba(11, 15, 25, 0.2);
+}
+.light .req-users-section{
+    background: #FFFFFF;
+    padding-top: 20px;
+}
+.light .req-users-section #users-list{
+    background: #F2F5FF;
+    height: fit-content;
+    border-radius: 10px;
+}
+.light .req-users-section #users-list li p{
+    color: #000000;
+}
+.light .req-users-section #users-list li span{
+    color: #000000;
+}
+.light .req-users-section #users-list li.active{
+    background: #4F52B4;
+}
+.light .req-users-section #users-list li.active p {
+    color: #FFFFFF;
+}
+.light .req-users-section #users-list li.active span{
+    color: #FFFFFF;
+}
+.light .req-users-section .all-users-table .table-for-all-users{
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.light .req-users-section .all-users-table .table-for-all-users table{
+    width: 100%;
+}
+.light .req-users-section .all-users-table table th{
+    background: #F2F5FF;
+    color: #000000;
+}
+.light .req-users-section .all-users-table table td{
+    color: rgba(0, 0, 0, 0.6);
+}
 
 @media screen and (max-width: 768px) {
     .light{

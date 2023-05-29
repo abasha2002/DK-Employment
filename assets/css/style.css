@@ -2334,6 +2334,7 @@
 }
 .user .req-users-section #req-users li{
     padding: 17px 16px 11px 16px;
+    cursor: pointer;
 }
 .user .req-users-section #req-users li.active{
     background: rgba(239, 242, 252, 0.1);
@@ -2493,7 +2494,7 @@
     border-radius: 50px;
     width: 100%;
     outline: 0;
-    padding: 14.2px 36px;
+    padding: 14.2px 115px 14.2px 36px;
     border: 1px solid rgba(239, 242, 252, 0.4);
 }
 .user .req-users-section .req-users-buttons button{
@@ -2601,9 +2602,12 @@
     letter-spacing: 0.0025em;
     color: #FFFFFF;
 }
-.user .req-users-section .all-users-table table{
+.user .req-users-section .all-users-table .table-for-all-users{
     width: 75%;
     border: 1px solid rgba(239, 242, 252, 0.05);
+}
+.user .req-users-section .all-users-table table{
+    width: 100%;
 }
 .user .req-users-section .all-users-table table th{
     width: 25%;
@@ -2723,7 +2727,12 @@
     letter-spacing: 0.04em;
     color: rgba(239, 242, 252, 0.4);
 }
-
+.user .req-users-section .req-users-buttons a{
+    width: 25%;
+}
+.user .req-users-section .req-users-buttons a button{
+    width: 100% !important;
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1400px){
     .index .section1 .service{
@@ -2755,6 +2764,9 @@
     .user .req-users-section #users-list li p{
         font-size: 11px;
     }
+    .user .req-users-section .req-users-chat .users-text{
+        width: 400px;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #company-logo{
@@ -2784,6 +2796,16 @@
     }
     .user .req-users-section #users-list li p{
         font-size: 11px;
+    }
+    .user .req-users-section .req-users-chat .date p span{
+        display: block;
+        margin: 0 !important;
+    }
+    .user .req-users-section .req-users-chat .users-text{
+        width: 300px;
+    }
+    .user .req-users-section .req-users-chat .write-comment{
+        width: 90% !important;
     }
 }
 @media screen and (max-width: 768px) {
