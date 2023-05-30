@@ -2733,6 +2733,46 @@
 .user .req-users-section .req-users-buttons a button{
     width: 100% !important;
 }
+.index .products-section{
+    margin-top: 140px;
+}
+.index .products-section h1{
+    font-family: 'HB';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 26px;
+}
+.index .products-section p{
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: rgba(239, 242, 252, 0.8);
+    margin: 0;
+}
+.index .products-section button{
+    background: #4F52B4;
+    border-radius: 10px;
+    text-align: center;
+    padding: 17px 24px;
+    border: none;
+    outline: 0;
+    margin-top: 60px;
+
+    font-family: 'HR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.0025em;
+    color: #FFFFFF;
+}
 
 @media screen and (min-width: 1025px) and (max-width: 1400px){
     .index .section1 .service{
@@ -3431,6 +3471,9 @@
     }
     .user .req-users-section .all-users-list{
         display: none;
+    }
+    .index .products-section .products-body{
+        padding: 0px 8px;
     }
 }
 @media screen and (max-width: 400px) {

@@ -850,6 +850,12 @@
 .light .req-users-section .all-users-table table td{
     color: rgba(0, 0, 0, 0.6);
 }
+.light .products-section h1{
+    color: #000000;
+}
+.light .products-section p{
+    color: rgba(0, 0, 0, 0.6);
+}
 
 @media screen and (max-width: 768px) {
     .light{
