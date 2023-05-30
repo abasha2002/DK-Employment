@@ -125,13 +125,82 @@
 
     <footer class="p-0">
         <div class="container mobile-footer d-flex align-items-center justify-content-evenly">
-            <img src="./assets/images/home.svg" alt="home icon">
-            <div class="plus-sign d-flex align-items-center justify-content-center">
-                <span>+</span>
+            <a href="index.html"><img src="./assets/images/home.svg" alt="home icon"></a>
+            <div data-bs-toggle="modal" data-bs-target="#exampleModal1" class="plus-sign d-flex align-items-center justify-content-center">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 8.99805H8.5V13.998C8.5 14.2633 8.39464 14.5176 8.20711 14.7052C8.01957 14.8927 7.76522 14.998 7.5 14.998C7.23478 14.998 6.98043 14.8927 6.79289 14.7052C6.60536 14.5176 6.5 14.2633 6.5 13.998V8.99805H1.5C1.23478 8.99805 0.98043 8.89269 0.792893 8.70515C0.605357 8.51762 0.5 8.26326 0.5 7.99805C0.5 7.73283 0.605357 7.47848 0.792893 7.29094C0.98043 7.1034 1.23478 6.99805 1.5 6.99805H6.5V1.99805C6.5 1.73283 6.60536 1.47848 6.79289 1.29094C6.98043 1.1034 7.23478 0.998047 7.5 0.998047C7.76522 0.998047 8.01957 1.1034 8.20711 1.29094C8.39464 1.47848 8.5 1.73283 8.5 1.99805V6.99805H13.5C13.7652 6.99805 14.0196 7.1034 14.2071 7.29094C14.3946 7.47848 14.5 7.73283 14.5 7.99805C14.5 8.26326 14.3946 8.51762 14.2071 8.70515C14.0196 8.89269 13.7652 8.99805 13.5 8.99805Z" fill="#EFF2FC"/>
+                    </svg>
             </div>
             <img src="./assets/images/pen.svg" alt="pen icon">
         </div>
     </footer>
+
+    <div class="modal fade" id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog services-modal-dialog">
+            <div class="modal-content services-modal-content" id="services-modal-content">
+                <div class="modal-header services-modal-header" id="services-modal-header">
+                    <div class="modal-header-exit d-flex">
+                        <h3>მყიდველის გაგზავნა</h3>
+                        <h3>მომხმარებლის გაგზავნა</h3>
+                        <img class="close" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
+                    </div>
+                </div>
+                <div class="modal-body services-modal-body" id="services-modal-body">
+                    <div class="modal-inputs" id="services-modal-inputs">
+                        <form action="" class="modal-form">
+                            <input type="text" placeholder="სახელი, გვარი">
+                            <input type="text" placeholder="მობილური">
+                            <div class="position-relative select">
+                                <img src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                                <select name="დეველოპერი კომპანია" id="development company">
+                                    <option value="დეველოპერი კომპანია" selected disabled>აირჩიე დეველოპერი კომპანია</option>
+                                    <option value="დეველოპერი კომპანია 1">დეველოპერი კომპანია 1</option>
+                                    <option value="დეველოპერი კომპანია 2">დეველოპერი კომპანია 2</option>
+                                    <option value="დეველოპერი კომპანია 3">დეველოპერი კომპანია 3</option>
+                                    <option value="დეველოპერი კომპანია 4">დეველოპერი კომპანია 4</option>
+                                    <option value="დეველოპერი კომპანია 5">დეველოპერი კომპანია 5</option>
+                                </select>
+                            </div>
+                            <div class="position-relative select">
+                                <img src="./assets/images/dropdown_arrow.svg" alt="dropdown arrow">
+                                <select name="სერვისი" id="select-service">
+                                    <option value="სერვისი" selected disabled>აირჩიე სერვისი</option>
+                                    <option value="სერვისი1">სერვისი 1</option>
+                                    <option value="სერვისი2">სერვისი 2</option>
+                                    <option value="სერვისი3">სერვისი 3</option>
+                                </select>
+                            </div>
+                            <textarea name="კომენტარი" id="textareaForComment" placeholder="დაწერეთ კომენტარი"></textarea>
+                        </form>
+                    </div>
+                    <div class="modal-exit services-modal-exit m-0" >
+                        <button id="sendButton" onclick="loading()" data-bs-target="#exampleModal1">გაგზავნე მომხმარებელი<img class="user-icon" style="margin-left: 11px;" src="./assets/images/user.svg" alt="user icon"></button>
+                    </div>
+    
+                    <div id="progress-container">
+                        <div class="line-box">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="afterLoad success" id="success">
+                        <div class="position-absolute closing-x">
+                            <img class="close" data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
+                        </div>
+                        <img src="./assets/images/success.svg" alt="successfuly send">
+                        <h4>მომხმარებელი წარმატებით გაიგზავნა</h4>
+    
+                        <a href="#">ნახეთ გაგზავნილი მომხმარებლები</a>
+                    </div>
+                    <div class="afterLoad fail">
+                        <img src="./assets/images/fail.svg" alt="sending request failed">
+                        <h4>მომხმარებელი ვერ გაიგზავნა</h4>
+    
+                        <a href="#">სცადეთ თავიდან</a>
+                    </div> 
+                </div>
+              </div>
+        </div>
+    </div>
 
 
     <script>

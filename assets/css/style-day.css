@@ -226,6 +226,9 @@
     background-image: none !important;
     background: #F2F5FF !important;
 }
+.light .section1{
+    background: #FFFFFF;
+}
 .light .section1 h1{
     color: #000000;
 }
@@ -737,7 +740,10 @@
 .light .req-users-section .req-users-buttons button:hover{
     background: #4F52B4;
     color: #FFFFFF;
-    border: none;
+    border: 1px solid #4F52B4;
+}
+.light .req-users-section .second-table{
+    background: #FFFFFF;
 }
 .light .req-users-section .second-table > div{
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -814,6 +820,7 @@
 .light .req-users-section{
     background: #FFFFFF;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .light .req-users-section #users-list{
     background: #F2F5FF;
@@ -963,5 +970,11 @@
     }
     .light .developers-section .upload-image .add-image{
         background-image: url(../images/add-image-light.png);
+    }
+    .light .section1{
+        background: #FFFFFF !important;
+    }
+    .light .req-users-section{
+        background: #F2F5FF;
     }
 }
