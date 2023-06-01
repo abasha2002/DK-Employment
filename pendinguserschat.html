@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
-<body class="index user">
+<body class="index user chat">
     <header class="index-header">
         <div class="container user-header">
             <div class="row align-items-center">
@@ -113,135 +113,70 @@
     </div>
 
     <section class="req-users-section">
-        <div class="req-users-header container d-flex justify-content-between">
-            <h2>განსახილველი მომხმარებლები</h2>
-            <img data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight" style="cursor: pointer;" src="./assets/images/filter.svg" alt="icon to filter information">
-        </div>
-
-        <div class="container mt-4 d-flex requested-users-container">
-            <div class="for-req-users">
-                <div class="search-req-users">
-                    <div class="position-relative">
-                        <img class="position-absolute search-icon" style="top: 50%; transform: translateY(-50%); right: 14px;" src="./assets/images/searching.svg" alt="searching icon">
-                        <input type="text" placeholder="სახელი, გვარი">
-                    </div>
-                </div>
-                <ul id="req-users">
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                    <li>
-                        <p>სახელი, გვარი</p>
-                    </li>
-                </ul>
-                <div class="see-all-users" style="margin-top: 43px; text-align: center; padding: 23px 0px; background: rgba(239, 242, 252, 0.1);">
-                    <a href="allusers.html">ყველა მომხმარებლის ნახვა</a>
-                </div>
-            </div>
-            <div class="requested-user">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>მომხმარებელი </th>
-                            <th>ტელეფონი</th>
-                            <th>მენეჯერი</th>
-                            <th>თარიღი</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="first">მომხმარებელი 1</td>
-                            <td class="first">599 000 XXX</td>
-                            <td class="first">მარიამ ცაავა</td>
-                            <td class="first">05.02.2023</td>
-                        </tr>
-                        <tr>
-                            <td class="second">ფილიალის დირექტორი</td>
-                            <td class="second">ეკატერინე თევდორაძე</td>
-                            <td class="second">599 000 111</td>
-                            <td class="second"><img style="margin-left: 3px;" src="./assets/images/phone-icon.svg" alt="phone icon"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="req-users-chat">
-                    <div>
+        <div class="container mobile-user-container">
+            <div class="chat-section">
+                <div>
+                    <div class="requested-person" style="padding: 16px 8px;">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex" style="gap: 20px;">
-                                <div>
-                                    <img src="./assets/images/req-users-profile.png" alt="user profile">
-                                </div>
-                                <div class="users-text">
-                                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-                                </div>
+                            <div class="d-flex align-items-center">
+                                <img class="userIcon" style="margin-right: 20px;" src="./assets/images/user-icon.svg" alt="user icon">
+                                <p class="user-name">მარიამ გაბოძე</p>
                             </div>
-                            <div class="date">
-                                <p>15:30 <span style="margin-left: 16px;">05 თებ 2023</span></p>
+                            <div>
+                                <span>05.03.2023</span>
                             </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center" style="margin-top: 36px;">
-                            <div class="date">
-                                <p>15:30 <span style="margin-left: 16px;">05 თებ 2023</span></p>
-                            </div>
-                            <div class="d-flex" style="gap: 20px;">
-                                <div>
-                                    <img src="./assets/images/req-users-profile.png" alt="user profile">
-                                </div>
-                                <div class="users-text">
-                                    <p>Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="write-text d-flex align-items-center justify-content-between">
-                        <div class="position-relative" style="width: 95%;">
-                            <img style="top: 50%; transform: translateY(-50%); right: 86.8px;" class="position-absolute" src="./assets/images/attach-file.svg" alt="icon for attaching files">
-                            <img style="top: 50%; transform: translateY(-50%); right: 39px;" class="position-absolute" src="./assets/images/gifs.svg" alt="icon for opening gifs">
-                            <input type="text" placeholder="დაწერეთ კომენტარი">
                         </div>
                         <div>
-                            <img src="./assets/images/send-text.svg" alt="icon for sending text">
+                            <p>მენეჯერი: მარიამ ცაავა</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>დირექტორი: ეკა სამხარაძე</p>
+                            <img style="width: 22px; height: 20px; transform: rotate(225deg);" src="./assets/images/phone-icon.svg" alt="phone icon">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container req-users-buttons" style="margin-top: 60px;">
-            <div class="d-flex justify-content-center" style="gap: 20px;">
-                <a href="userliked.html">
-                    <button>მოეწონა</button>
-                </a>
-                <a href="userbooked.html">
-                    <button style="background: #4F52B4; color: white; border: none;">ჯავშანი</button>
-                </a>
-                <a href="didnotbuy.html">
-                    <button>არ იყიდა</button>
-                </a>
-                <a href="sold.html">
-                    <button>გაყიდული</button>
-                </a>
+        
+            <div class="chat-section2">
+                <div>
+                    <div class="chat-with-user" style="padding: 24px 8px;">
+                        <div>
+                            <h2><img style="margin-right: 16px;" src="./assets/images/chat.svg" alt="chat icon"> შეტყობინებები</h2>
+                        </div>
+                        <div class="chatting" style="margin-top: 16px; padding: 24px 16px;">
+                            <div class="text-center">
+                                <span>სამ. 16 15:30</span>
+                            </div>
+                            <div class="user-text">
+                                <p>გამარჯობა</p>
+                            </div>
+                            <div class="company-text">
+                                <div>
+                                    <p>გამარჯობა, რით შემიძლია დაგეხმაროთ? </p>
+                                </div>
+                            </div>
+                            <div class="user-text">
+                                <p>Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                            </div>
+                            <div class="company-text">
+                                <div>
+                                    <p>გამარჯობა, რით შემიძლია დაგეხმაროთ? </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="send-text-input" style="padding: 0px 8px 24px 8px;">
+                        <div class="position-relative">
+                            <img style="top: 50%; transform: translateY(-50%) rotate(-45deg); left: 22px; filter: invert(45%);" class="position-absolute" src="./assets/images/attach-file.svg" alt="attach file icon">
+                            <input type="text" placeholder="დაწერეთ კომენტარი">
+                            <img style="top: 50%; transform: translateY(-50%); right: 25px;" class="position-absolute" src="./assets/images/send-text.svg" alt="icon for sending text">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="container second-table">
+        <div class="container second-table second-table-mobiles">
             <div>
                 <table>
                     <thead>
@@ -254,8 +189,8 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>განსახილველი მომხმარებლები</td>
                             <td>მოლაპარაკების პროცესში</td>
-                            <td>ჯავშანი</td>
                             <td>მარიამ ცაავა</td>
                             <td>05.02.2023</td>
                         </tr>
@@ -264,126 +199,29 @@
             </div>
         </div>
 
-        <div class="container mobile-user-container">
-            <ul style="margin-bottom: 8px;">
-                <li>
-                    <a href="userbookedchat.html">
-                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/images/user-icon.svg" alt="user icon">
-                                <h2>მარიამ გაბოძე</h2>
-                            </div>
-                            <div>
-                                <p>599 999 999</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>მენეჯერი: მარიამ ცაავა</span>
-                            <span>05.03.2023</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="userbookedchat.html">
-                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/images/user-icon.svg" alt="user icon">
-                                <h2>მარიამ გაბოძე</h2>
-                            </div>
-                            <div>
-                                <p>599 999 999</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>მენეჯერი: მარიამ ცაავა</span>
-                            <span>05.03.2023</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="userbookedchat.html">
-                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/images/user-icon.svg" alt="user icon">
-                                <h2>მარიამ გაბოძე</h2>
-                            </div>
-                            <div>
-                                <p>599 999 999</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>მენეჯერი: მარიამ ცაავა</span>
-                            <span>05.03.2023</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="userbookedchat.html">
-                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/images/user-icon.svg" alt="user icon">
-                                <h2>მარიამ გაბოძე</h2>
-                            </div>
-                            <div>
-                                <p>599 999 999</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>მენეჯერი: მარიამ ცაავა</span>
-                            <span>05.03.2023</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="userbookedchat.html">
-                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/images/user-icon.svg" alt="user icon">
-                                <h2>მარიამ გაბოძე</h2>
-                            </div>
-                            <div>
-                                <p>599 999 999</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>მენეჯერი: მარიამ ცაავა</span>
-                            <span>05.03.2023</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="userbookedchat.html">
-                        <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 10px;">
-                            <div class="d-flex align-items-center">
-                                <img src="./assets/images/user-icon.svg" alt="user icon">
-                                <h2>მარიამ გაბოძე</h2>
-                            </div>
-                            <div>
-                                <p>599 999 999</p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span>მენეჯერი: მარიამ ცაავა</span>
-                            <span>05.03.2023</span>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <div class="total text-end">
-                <p>სულ:150 <img style="margin-left: 16px;" src="./assets/images/requested-users-icon.svg" alt="user icon"></p>
+        <div class="mobile-background" id="mobile-background"></div>
+        <div class="mobile-modal" id="mobile-modal" style="bottom: -360px">
+            <div class="text-center">
+                <button id="open-button"></button>
             </div>
-            <div class="text-center" style="margin-top: 60px; margin-bottom: 100px;">
-                <a href="allusers.html">
-                    <button>ყველას ნახვა</button>
+            <div class="status">
+                <h2>სტატუსის მინიჭება</h2>
+                <a href="userliked.html">
+                    <button>მოეწონა</button>
+                </a>
+                <a href="userbooked.html">
+                    <button>ჯავშანი</button>
+                </a>
+                <a href="didnotbuy.html">
+                    <button>არ იყიდა</button>
+                </a>
+                <a href="sold.html">
+                    <button>გაყიდული</button>
                 </a>
             </div>
         </div>
     </section>
+
 
     <div class="offcanvas offcanvas-end filter-canvas" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -436,7 +274,6 @@
         </div>
     </div>
 
-
     <script>
         const body = document.querySelector("body");
         let theme = localStorage.getItem("light-mode");
@@ -459,18 +296,28 @@
         disableLightMode();
         }
 
-
-        const listItems = document.querySelectorAll('#req-users li');
-
-        listItems.forEach((li) => {
-        li.addEventListener('click', () => {
-            listItems.forEach((li) => {
-            li.classList.remove('active');
+        const open = document.getElementById("open-button");
+        const close = document.getElementById("mobile-background");
+        let isOpen = true;
+        if(open){
+            open.addEventListener("click", () => {
+                if(isOpen){
+                    document.getElementById("mobile-modal").style.bottom = "0";
+                    document.querySelector(".mobile-background").style.display = "block";
+                }else{
+                    document.getElementById("mobile-modal").style.bottom = "-360px";
+                    document.querySelector(".mobile-background").style.display = "none";
+                }
+                isOpen = !isOpen;
             });
-            
-            li.classList.add('active');
-        });
-        });
+
+            close.addEventListener("click", () => {
+                if(!isOpen){
+                    document.getElementById("mobile-modal").style.bottom = "-360px";
+                    document.querySelector(".mobile-background").style.display = "none";
+                }
+            })
+        }
     </script>
 </body>
 </html>

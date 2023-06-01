@@ -863,6 +863,18 @@
 .light .products-section p{
     color: rgba(0, 0, 0, 0.6);
 }
+.light .req-users-section .mobile-user-container .total p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.light .req-users-section .mobile-user-container .total p img{
+    filter: invert(33%) sepia(100%) saturate(7500%) hue-rotate(246deg) brightness(103%) contrast(105%);
+}
+.light .chat-section .requested-person p:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+.light .chat-section .requested-person span:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
 
 @media screen and (max-width: 768px) {
     .light{
@@ -976,5 +988,23 @@
     }
     .light .req-users-section{
         background: #F2F5FF;
+    }
+    .light .mobile-modal{
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .light .mobile-background{
+        background: #f2f5ffe0;
+    }
+    .light .mobile-modal .status h2{
+        color: #000000;
+    }
+    .light .mobile-modal .status button{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #000000;
+    }
+    .light .mobile-modal .status button:hover{
+        background: #4F52B4;
+        color: white;
     }
 }
