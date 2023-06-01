@@ -2613,6 +2613,9 @@
     color: #FFFFFF;
     margin: 0;
 }
+.user .chat-section .requested-person p:hover{
+    opacity: .5;
+}
 .user .chat-section .requested-person span{
     font-family: 'HR';
     font-style: normal;
@@ -2621,6 +2624,9 @@
     line-height: 12px;
     letter-spacing: 0.0015em;
     color: #FFFFFF;
+}
+.user .chat-section .requested-person span:hover{
+    opacity: .5;
 }
 .user .chat-section2{
     margin-top: 16px;
