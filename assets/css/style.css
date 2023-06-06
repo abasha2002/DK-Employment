@@ -835,20 +835,19 @@
     color: #FFFFFF;
 }
 .index .section2 .section2-tables {
-    position: relative;
     overflow: hidden;
     padding: 0;
     border-radius: 10px;
-    border: 1px solid rgba(239, 242, 252, 0.05);
+    position: relative;
 }
   
 .index .tables-spotlight {
     position: absolute;
-    top: -2px;
+    top: 0;
     z-index: 5;
     left: 0;
     width: 250px;
-    height: 2px;
+    height: 1px;
     background: #4F52B4;
     filter: blur(1px);
     border-radius: 26px;
@@ -867,11 +866,11 @@
 }
 .index .section2-spotlight-bottom{
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     z-index: 5;
     right: 250px;
     width: 250px;
-    height: 2px;
+    height: 1px;
     background: #4F52B4;
     filter: blur(1px);
     border-radius: 26px;
