@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="burger-menu">
-                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#burgeroffcanvas">
                             <img class="burger-menu-icon" src="./assets/images/burger-menu.svg" alt="burger menu">
                         </button>
                     </div>
@@ -77,16 +77,14 @@
             </div>
         </div>
     </header>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog burger-menu-modal-dialog">
-          <div class="modal-content burger-menu-modal-content">
-            <div class="modal-header burger-menu-modal-header p-0">
-                <div class="modal-header-exit text-end">
-                    <img data-bs-dismiss="modal" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
-                </div>
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="burgeroffcanvas" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header p-0">
+            <div class="modal-header-exit text-end">
+                <img data-bs-dismiss="offcanvas" aria-label="Close" style="cursor: pointer;" src="./assets/images/X-mark.svg" alt="X mark for leaving the page">
             </div>
-            <div class="modal-body p-0">
-              <div class="modal-links">
+        </div>
+        <div class="offcanvas-body p-0">
+            <div class="modal-links">
                 <a href="developers.html">დეველოპერები</a>
                 <a href="#">ტრენინგები</a>
                 <a href="parameters.html">პარამეტრები</a>
@@ -101,13 +99,10 @@
                 <a href="parameters.html">პარამეტრები</a>
                 <hr>
             </div>
+
+            <div class="modal-exit offcanvas-footer p-0">
+                <a href="signin.html">გასვლა <img class="exit" style="margin-left: 16px;" src="./assets/images/exit.svg" alt="exit icon"></a>
             </div>
-            <div class="modal-footer burger-menu-modal-footer p-0">
-                <div class="modal-exit">
-                    <a href="signin.html">გასვლა <img class="exit" style="margin-left: 16px;" src="./assets/images/exit.svg" alt="exit icon"></a>
-                </div>
-            </div>
-          </div>
         </div>
     </div>
 

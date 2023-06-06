@@ -875,6 +875,18 @@
 .light .chat-section .requested-person span:hover{
     color: rgba(0, 0, 0, 0.6);
 }
+.light #burgeroffcanvas{
+    background-color: white;
+}
+.light #burgeroffcanvas a{
+    color: #000000;
+}
+.light #burgeroffcanvas .offcanvas-footer a{
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+.light #burgeroffcanvas .offcanvas-header img{
+    filter: invert(100%);
+}
 
 @media screen and (max-width: 768px) {
     .light{
