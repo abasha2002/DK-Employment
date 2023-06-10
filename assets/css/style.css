@@ -1,18 +1,20 @@
 @font-face {
-    font-family: 'HR';
-    src: url(../fonts/HELVETICANEUELTGEO-55ROMAN.otf);
-}
-@font-face {
-    font-family: 'HB';
-    src: url(../fonts/HELVETICANEUELTGEO-75BOLD.otf);
-}
-@font-face {
-    font-family: 'HL';
-    src: url(../fonts/HELVETICANEUELTGEO-45LIGHT.otf);
-}
-@font-face {
-    font-family: 'FiraGO';
+    font-family: 'FiraGo-Regular';
     src: url(../fonts/FiraGO-Regular.ttf);
+}
+@font-face {
+    font-family: 'FiraGo-Light';
+    src: url(../fonts/FiraGO-Light.ttf);
+}
+@font-face {
+    font-family: 'FiraGo-Bold';
+    src: url(../fonts/FiraGO-Bold.ttf);
+}
+
+:root {
+    --firago-regular: 'FiraGo-Regular';
+    --firago-light: 'FiraGo-Light';
+    --firago-bold: 'FiraGo-Bold';
 }
 
 *{
@@ -47,7 +49,7 @@
 }
 
 .auth  h1{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -57,7 +59,7 @@
     margin-bottom: 0;
 }
 .auth .signin  p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -81,7 +83,7 @@
     border-radius: 10px;
 }
 .auth .social-media span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -98,7 +100,7 @@
 }
 .auth .lines span{
     margin: 0px 24px;
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -112,7 +114,7 @@
 }
 
 .auth .inputs label{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -187,7 +189,7 @@
     cursor: pointer;
 }
 .auth .checkbox label{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -196,7 +198,7 @@
     color: rgba(239, 242, 252, 0.7);
 }
 .auth .checkbox a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -216,7 +218,7 @@
     border: none;
     outline: 0;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -229,7 +231,7 @@
     text-align: center;
 }
 .auth .registration a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -294,7 +296,7 @@
     margin-top: 36px;
 }
 .auth .already-registered span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -302,7 +304,7 @@
     color: rgba(239, 242, 252, 0.7);
 }
 .auth .already-registered a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -327,7 +329,7 @@
     border-radius: 10px;
 }
 .auth h4{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -344,7 +346,7 @@
     outline: 0;
     margin-top: 12px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -353,7 +355,7 @@
     color: #FFFFFF;
 }
 .auth .lost-password-section ::placeholder{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -420,7 +422,7 @@
     display: none;
 }
 .index .index-header p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -430,7 +432,7 @@
     margin: 0;
 }
 .index .index-header .statistics{
-    font-family: 'HR' !important;
+    font-family: var(--firago-regular) !important;
     font-weight: 400 !important;
 }
 .index .index-header span{
@@ -461,7 +463,7 @@
     gap: 16px;
 }
 .index .index-header a{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -518,7 +520,7 @@
     display: none;
 }
 .index #burgeroffcanvas a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -551,7 +553,7 @@
     gap: 16px;
 }
 .index .money-amount-desktop h1{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -561,7 +563,7 @@
     margin: 0;
 }
 .index .money-amount-desktop span{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -574,7 +576,7 @@
     margin: 80px 0px;
 }
 .index .description h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -586,7 +588,7 @@
 }
 .index .description p{
     width: 554px;
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -603,7 +605,7 @@
     border-radius: 10px;
 }
 .index .section1 .service h3{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -612,7 +614,7 @@
     margin: 0;
 }
 .index .section1 .service span{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -626,7 +628,7 @@
     width: 200px;
     padding: 16px 24px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -649,7 +651,7 @@
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -667,7 +669,7 @@
     resize: none;
     outline: 0;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -687,7 +689,7 @@
     z-index: 2;
     position: relative;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -700,7 +702,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 93%;
-    z-index: 1;
+    z-index: 3;
 }
 .index #exampleModal1 option{
     background-color: #0B0F19;
@@ -731,7 +733,7 @@
     outline: 0;
     border: none;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -747,7 +749,7 @@
     justify-content: space-between;
 }
 .index #exampleModal1 .modal-header-exit h3{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -802,7 +804,7 @@
     display: none;
 }
 .index #exampleModal1 .afterLoad h4{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -813,7 +815,7 @@
     margin-top: 31px;
 }
 .index #exampleModal1 .afterLoad a{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -838,7 +840,7 @@
     margin-bottom: 24px;
 }
 .index .section2 h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -961,15 +963,19 @@
     align-items: center;
     padding: 15px 16px;
 }
+.index .section2 .section2-tables ul li a{
+    text-decoration: none;
+}
 .index .section2 .section2-tables ul li p{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.0025em;
     color: #FFFFFF;
-    margin: 0;
+    margin: 0; 
+    text-decoration: none !important;
 }
 .index .section2 .section2-tables ul li:hover{
     cursor: pointer;
@@ -978,7 +984,7 @@
     opacity: .5;
 }
 .index .section2 .section2-tables ul li span{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1006,7 +1012,7 @@
 }
 .index .section2 .section2-tables table th{
     padding: 17px 24px;
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1017,7 +1023,7 @@
 }
 .index .section2 .section2-tables table td{
     padding: 16.6px 24px;
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1026,7 +1032,7 @@
     border-bottom: 1px solid rgba(239, 242, 252, 0.02);
 }
 .index .section2 .section2-tables table td a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1062,7 +1068,7 @@
     outline: 0;
     border: none;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1078,7 +1084,7 @@
     justify-content: space-between;
 }
 .index .filter-canvas .offcanvas-header h3{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1106,7 +1112,7 @@
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1126,7 +1132,7 @@
     z-index: 2;
     position: relative;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1171,7 +1177,7 @@
     border-radius: 10px;
 }
 .index .section3 h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1194,7 +1200,7 @@
     border: 1px solid rgba(239, 242, 252, 0.5);
     border-radius: 10px;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1209,7 +1215,7 @@
 }
 .index .section3 p{
     width: 530px;
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1224,7 +1230,7 @@
     flex-direction: column;
 }
 .index .section3 .exchange span{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1292,7 +1298,7 @@
     margin-left: 100px;
 }
 .index .section4 .chart-numbers h6{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1303,7 +1309,7 @@
     margin-left: 16px;
 }
 .index .section4 .chart-numbers p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1314,7 +1320,7 @@
 }
 .index .section4 .chart-numbers .plus{
     color: rgba(34, 197, 94, 0.9);
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1324,7 +1330,7 @@
 }
 .index .section4 .chart-numbers .minus{
     color: rgba(239, 68, 68, 0.9);
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1410,7 +1416,7 @@
     margin-right: 16px;
 }
 .index .section4 .second-charts .chart-info h5{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1433,7 +1439,7 @@
     gap: 16px;
 }
 .index footer .footer-links a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1466,7 +1472,7 @@
     align-items: center;
 }
 .index .chart-numbers-mobile h6{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1476,7 +1482,7 @@
     margin: 0;
 }
 .index .chart-numbers-mobile p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1486,7 +1492,7 @@
     margin: 0;
 }
 .index .chart-numbers-mobile .plus{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1495,7 +1501,7 @@
     color: #22C55E;
 }
 .index .chart-numbers-mobile .minus{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1525,7 +1531,7 @@
     display: none;
 }
 .index .section4 .second-charts .total span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1560,7 +1566,7 @@
 
 .parameters .parameters-section1{
     margin-top: 140px;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 .parameters .parameters-container{
     width: 420px;
@@ -1569,7 +1575,7 @@
     margin-bottom: 26px;
 }
 .parameters .parameters-section1 h1{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1578,7 +1584,7 @@
     margin: 0;
 }
 .parameters .parameters-section1 .parameters-switcher p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1589,7 +1595,7 @@
 }
 .parameters .parameters-inputs label{
     display: block;
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1606,7 +1612,7 @@
     padding: 14.2px 16px;
     outline: 0;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1628,7 +1634,7 @@
 }
 .parameters .parameters-mobile h2{
     margin: 0;
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1656,7 +1662,7 @@
     padding-bottom: 36px;
 }
 .user .user-container h1{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1665,7 +1671,7 @@
     margin-bottom: 24px;
 }
 .user .user-container p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1687,7 +1693,7 @@
     color: rgba(239, 242, 252, 0.2);
     outline: 0;
     
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1706,7 +1712,7 @@
     z-index: 2;
     position: relative;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1733,7 +1739,7 @@
     resize: none;
     outline: 0;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1742,7 +1748,7 @@
     color: rgba(239, 242, 252, 0.5);
 }
 .user .user-container ::placeholder{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1767,7 +1773,7 @@
     height: 49px;
     border: none;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1820,7 +1826,7 @@
     display: none;
 }
 .user .afterLoad h4{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1831,7 +1837,7 @@
     margin-top: 31px;
 }
 .user .afterLoad a{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1859,7 +1865,7 @@
     border-bottom: 1px solid rgba(239, 242, 252, 0.02);
     width: 25%;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1870,7 +1876,7 @@
     padding: 17px 24px;
     border-bottom: 1px solid rgba(239, 242, 252, 0.02);
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -1890,7 +1896,7 @@
     display: none;
 }
 .user .index-header .user-mobile-header h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1920,7 +1926,7 @@
     height: 16px;
 }
 .user .user-container .mobile-user-container ul li h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -1929,7 +1935,7 @@
     margin: 0;
 }
 .user .user-container .mobile-user-container ul li p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1939,7 +1945,7 @@
     margin: 0;
 }
 .user .user-container .mobile-user-container ul li span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1952,7 +1958,7 @@
     margin-top: 140px;
 }
 .user .developers-section h1{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1966,7 +1972,7 @@
 }
 .user .developers-section .developers-inputs label{
     display: block;
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1984,7 +1990,7 @@
     appearance: none;
     -webkit-appearance: none;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2012,7 +2018,7 @@
     padding: 17px 0px;
     margin-bottom: 60px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2021,7 +2027,7 @@
     color: #EFF2FC;
 }
 .user .developers-section a{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2040,7 +2046,7 @@
     display: block;
     margin-bottom: 16px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2056,7 +2062,7 @@
     padding: 15.4px 16px;
     border-radius: 10px;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2065,7 +2071,7 @@
     color: #EFF2FC;
 }
 .user .developers-section .developers1-inputs p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2075,7 +2081,7 @@
     margin: 0;
 }
 .user .developers-section .developers1-inputs span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2101,7 +2107,7 @@
     margin-top: 36px;
 }
 .user .developers-section .upload-image p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2118,7 +2124,7 @@
     outline: 0;
     padding: 17px 0px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2133,7 +2139,7 @@
     display: none;
 }
 .user .developers-section .developers1-inputs h3{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2152,7 +2158,7 @@
     border-radius: 10px;
     appearance: none;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2170,7 +2176,7 @@
     border-radius: 10px;
     resize: none;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2179,7 +2185,7 @@
     color: #EFF2FC;
 }
 .user .developers-section .renders p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2197,7 +2203,7 @@
     display: block;
     margin-bottom: 16px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2215,7 +2221,7 @@
     border-radius: 10px;
     resize: none;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2229,7 +2235,7 @@
     gap: 36px;
 }
 .user .developers-section .developers-filter h2{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2239,7 +2245,7 @@
     margin-bottom: 24px;
 }
 .user .developers-section .developers-filter label{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2262,7 +2268,7 @@
     border: none;
     outline: 0;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2298,7 +2304,7 @@
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2318,7 +2324,7 @@
     z-index: 2;
     position: relative;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2331,7 +2337,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 93%;
-    z-index: 1;
+    z-index: 3;
 }
 .index .filter-canvas option{
     background-color: #0B0F19;
@@ -2344,7 +2350,7 @@
     overflow: hidden;
 }
 .user .req-users-section h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -2353,7 +2359,7 @@
     margin: 0;
 }
 .user .req-users-section-mobile h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -2371,6 +2377,8 @@
     border-style: solid;
     border-color: rgba(239, 242, 252, 0.2);
     border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
 }
 .user .req-users-section .search-req-users{
     padding: 16px 16px 24px 16px;
@@ -2378,7 +2386,7 @@
 .user .req-users-section .search-req-users input{
     padding: 14.2px 16px;
     width: 100%;
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
@@ -2402,7 +2410,7 @@
     background: rgba(239, 242, 252, 0.1);
 }
 .user .req-users-section #req-users li p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2412,7 +2420,7 @@
     margin: 0;
 }
 .user .req-users-section .for-req-users a{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2437,7 +2445,7 @@
     padding: 16px 20px;
     background: rgba(239, 242, 252, 0.1);
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2448,7 +2456,7 @@
     padding: 16px 20px;
     background: inherit;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2458,7 +2466,7 @@
 .user .req-users-section .requested-user table .second{
     padding: 16px 20px;
     background: rgba(239, 242, 252, 0.1);
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2482,7 +2490,7 @@
     padding: 4px 8px;
 }
 .user .req-users-section .req-users-chat .users-text p{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2492,7 +2500,7 @@
     margin: 0;
 }
 .user .req-users-section .req-users-chat .date p{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2501,7 +2509,7 @@
     margin: 0;
 }
 .user .req-users-section .req-users-chat .write-text input{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2524,7 +2532,7 @@
     outline: 0;
     width: 100%;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2548,7 +2556,7 @@
     padding: 16px 24px;
     background: rgba(239, 242, 252, 0.1);
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2559,7 +2567,7 @@
     padding: 16px 24px;
     background: #0B0F19;
 
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2567,7 +2575,7 @@
     color: rgba(239, 242, 252, 0.8);
 }
 .user .req-users-section .mobile-user-container .overall p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2584,7 +2592,7 @@
     padding: 16px 24px;
     text-align: center;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -2608,7 +2616,7 @@
     border-radius: 10px;
 }
 .user .req-users-section #users-list li p{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2617,7 +2625,7 @@
     margin: 0;
 }
 .user .req-users-section #users-list li span{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -2636,7 +2644,7 @@
     width: 25%;
     padding: 17px 24px;
     background: rgba(239, 242, 252, 0.02);
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2645,7 +2653,7 @@
 }
 .user .req-users-section .all-users-table table td{
     padding: 17px 24px;
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2661,7 +2669,7 @@
     gap: 10px;
 }
 .user .chat-section .requested-person p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2674,7 +2682,7 @@
     opacity: .5;
 }
 .user .chat-section .requested-person span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2690,7 +2698,7 @@
     background: #0B0F19;
 }
 .user .chat-section2 .chat-with-user h2{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2705,7 +2713,7 @@
     gap: 16px;
 }
 .user .chat-section2 .chat-with-user .chatting .user-text p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2722,7 +2730,7 @@
     margin-left: auto;
 }
 .user .chat-section2 .chat-with-user .company-text p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2732,7 +2740,7 @@
     margin: 0;
 }
 .user .chat-section2 .chat-with-user span{
-    font-family: 'HL';
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -2747,7 +2755,7 @@
     padding: 20px 60px 20px 50px;
     outline: 0;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2762,7 +2770,7 @@
     margin-top: 140px;
 }
 .index .products-section h1{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -2772,7 +2780,7 @@
     margin-bottom: 26px;
 }
 .index .products-section p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -2790,7 +2798,7 @@
     outline: 0;
     margin-top: 60px;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2814,7 +2822,7 @@
     height: 16px;
 }
 .user .req-users-section .mobile-user-container ul li h2{
-    font-family: 'HB';
+    font-family: var(--firago-bold);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -2823,7 +2831,7 @@
     margin: 0;
 }
 .user .req-users-section .mobile-user-container ul li p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2833,7 +2841,7 @@
     margin: 0;
 }
 .user .req-users-section .mobile-user-container ul li span{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2851,7 +2859,7 @@
     padding: 0px 20px;
 }
 .user .req-users-section .mobile-user-container .total p{
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -2868,12 +2876,18 @@
     border: none;
     outline: 0;
 
-    font-family: 'HR';
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     color: #FFFFFF;
+}
+.index .req-users-section .req-users-chat .write-text img{
+    cursor: pointer;
+}
+.index .section2 .section2-tables .mobile-list{
+    display: none;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1400px){
@@ -3049,7 +3063,7 @@
         display: inline-block;
     }
     .index .money-amount h2{
-        font-family: 'HR';
+        font-family: var(--firago-regular);
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -3060,7 +3074,7 @@
         margin-bottom: 10px !important;
     }
     .index .money-amount span{
-        font-family: 'HR';
+        font-family: var(--firago-regular);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -3165,7 +3179,7 @@
         width: 270px;
     }
     .index .section1 .mobile-service-header{
-        font-family: 'HB';
+        font-family: var(--firago-bold);
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
@@ -3284,6 +3298,7 @@
     }
     .index .section2 .section2-tables ul .p-div{
         padding: 17px 16px;
+        width: 100%;
     }
     .index .section2 .section2-tables ul .span-div{
         height: 100%;
@@ -3670,7 +3685,7 @@
         gap: 24px;
     }
     .user .mobile-modal .status h2{
-        font-family: 'HB';
+        font-family: var(--firago-bold);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -3686,7 +3701,7 @@
         background: inherit;
         border-radius: 10px;
 
-        font-family: 'HR';
+        font-family: var(--firago-regular);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -3723,6 +3738,12 @@
     }
     .index #burgeroffcanvas .modal-mobile-links{
         display: block;
+    }
+    .index .section2 .section2-tables .mobile-list{
+        display: block;
+    }
+    .index .section2 .section2-tables .desktop-list{
+        display: none;
     }
 }
 @media screen and (max-width: 400px) {
