@@ -125,7 +125,7 @@
 .auth .input{
     width: 100%;
     height: 50px;
-    background-color: inherit;
+    background-color: #0B0F19;
     border: 1px solid rgba(239, 242, 252, 0.2);
     border-radius: 10px;
     color: #EFF2FC;
@@ -157,7 +157,7 @@
     display: none;
 }
 .auth .checkbox-input input:checked ~ .checkmark {
-    background-color: inherit;
+    background-color: #0B0F19;
     border: 2px solid white;
 }
 .auth .checkbox-input:has(input:checked){
@@ -296,7 +296,7 @@
     margin-top: 36px;
 }
 .auth .already-registered span{
-    font-family: var(--firago-regular);
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -355,7 +355,7 @@
     color: #FFFFFF;
 }
 .auth .lost-password-section ::placeholder{
-    font-family: var(--firago-regular);
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -647,7 +647,7 @@
     height: 50px;
     outline: 0;
     padding: 17px 16px;
-    background-color: inherit;
+    background-color: rgb(11, 15, 25);
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
 
@@ -662,7 +662,7 @@
 .index #exampleModal1 textarea{
     width: 100%;
     height: 80px;
-    background-color: inherit;
+    background-color: rgb(11, 15, 25);
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
     padding: 17px 16px;
@@ -680,7 +680,7 @@
 .index #exampleModal1 select{
     width: 100%;
     height: 50px;
-    background-color: transparent;
+    background-color: rgb(11, 15, 25);
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
     padding: 16px 16px;
@@ -1196,7 +1196,7 @@
     width: 530px;
     appearance: none;
     padding: 17px 16px;
-    background-color: inherit;
+    background-color: #0B0F19;
     border: 1px solid rgba(239, 242, 252, 0.5);
     border-radius: 10px;
 
@@ -1215,7 +1215,7 @@
 }
 .index .section3 p{
     width: 530px;
-    font-family: var(--firago-light);
+    font-family: var(--firago-regular);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1608,7 +1608,7 @@
     width: 100%;
     border: 1px solid rgba(239, 242, 252, 0.2);
     border-radius: 10px;
-    background-color: inherit;
+    background-color: #000212;
     padding: 14.2px 16px;
     outline: 0;
 
@@ -1686,7 +1686,7 @@
 .user .user-container input{
     width: 100%;
     padding: 18px 16px;
-    background-color: inherit;
+    background-color: #0B0F19;
     border: 1px solid rgba(239, 242, 252, 0.2);
     border-radius: 10px;
     margin-bottom: 10px;
@@ -1703,7 +1703,7 @@
 }
 .user .user-container select{
     width: 100%;
-    background-color: transparent;
+    background-color: #0B0F19;
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.2);
     padding: 15px 16px;
@@ -1728,11 +1728,12 @@
     top: 50%;
     transform: translateY(-50%);
     right: 20px;
+    z-index: 3;
 }
 .user .user-container textarea{
     width: 100%;
     height: 80px;
-    background-color: inherit;
+    background-color: #0B0F19;
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.2);
     padding: 17px 16px;
@@ -1748,7 +1749,7 @@
     color: rgba(239, 242, 252, 0.5);
 }
 .user .user-container ::placeholder{
-    font-family: var(--firago-regular);
+    font-family: var(--firago-light);
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -1983,7 +1984,7 @@
 }
 .user .developers-section .developers-inputs select{
     width: 530px;
-    background-color: inherit;
+    background-color: #000212;
     border-radius: 10px;
     padding: 14.2px 16px;
     outline: 0;
@@ -2055,7 +2056,7 @@
     color: #EFF2FC;
 }
 .user .developers-section .developers1-inputs > div > input{
-    background-color: inherit;
+    background-color: #000212;
     width: 100%;
     outline: 0;
     border: 2px solid rgba(239, 242, 252, 0.1);
@@ -2149,8 +2150,8 @@
     margin-bottom: 16px;
 }
 
-.user .developers-section .developers1-inputs  select{
-    background-color: inherit;
+.user .developers-section .developers1-inputs select{
+    background-color: #000212;
     width: 100%;
     outline: 0;
     border: 2px solid rgba(239, 242, 252, 0.1);
@@ -2166,8 +2167,11 @@
     letter-spacing: 0.0025em;
     color: #EFF2FC;
 }
-.user .developers-section .developers1-inputs  textarea{
-    background-color: inherit;
+.user .developers-section .developers1-inputs select option{
+    background-color: #0B0F19;
+}
+.user .developers-section .developers1-inputs textarea{
+    background-color: #000212;
     width: 100%;
     height: 80px;
     outline: 0;
@@ -2212,7 +2216,7 @@
     color: #EFF2FC;
 }
 .user .developers-section .last-textarea textarea{
-    background-color: inherit;
+    background-color: #000212;
     width: 100%;
     height: 80px;
     outline: 0;
@@ -2293,14 +2297,14 @@
     border: none;
 }
 .index .filter-canvas{
-    background-color: inherit !important;
+    background-color: #000212 !important;
 }
 .index .filter-canvas input{
     width: 100%;
     height: 50px;
     outline: 0;
     padding: 17px 16px;
-    background-color: inherit;
+    background-color: #000212;
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
 
@@ -2315,7 +2319,7 @@
 .index .filter-canvas select{
     width: 100%;
     height: 50px;
-    background-color: transparent;
+    background-color: #000212;
     border-radius: 10px;
     border: 1px solid rgba(239, 242, 252, 0.5);
     padding: 16px 16px;
@@ -2340,7 +2344,7 @@
     z-index: 3;
 }
 .index .filter-canvas option{
-    background-color: #0B0F19;
+    background-color: #000212;
     padding: 10px;
     font-size: 14px;
 }
@@ -2392,7 +2396,7 @@
     font-size: 10px;
     line-height: 16px;
     color: rgba(239, 242, 252, 0.4);
-    background-color: inherit;
+    background-color: #0B0F19;
     border: 1px solid rgba(239, 242, 252, 0.4);
     border-radius: 10px;
     outline: 0;
@@ -2516,7 +2520,7 @@
     line-height: 16px;
     letter-spacing: 0.0025em;
     color: rgba(239, 242, 252, 0.4);
-    background-color: inherit;
+    background-color: #0B0F19;
     border-radius: 50px;
     width: 100%;
     outline: 0;
@@ -2749,7 +2753,7 @@
 }
 .user .chat-section2 .send-text-input input{
     width: 100%;
-    background-color: inherit;
+    background-color: #0B0F19;
     border: 1px solid rgba(239, 242, 252, 0.05);
     border-radius: 10px;
     padding: 20px 60px 20px 50px;

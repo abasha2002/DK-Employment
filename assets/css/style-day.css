@@ -746,7 +746,7 @@
     filter: invert(100%);
 }
 .light .req-users-section .req-users-buttons button{
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     color: rgba(0, 0, 0, 0.8);
 }
 .light .req-users-section .req-users-buttons button:hover{
@@ -899,10 +899,10 @@
 .light #burgeroffcanvas .offcanvas-header img{
     filter: invert(100%);
 }
-select{
+.light select{
     background-color: #FFFFFF !important;
 }
-textarea{
+.light textarea{
     background-color: #FFFFFF !important;
 }
 .light .developers-section .developers1-inputs > div > input{
